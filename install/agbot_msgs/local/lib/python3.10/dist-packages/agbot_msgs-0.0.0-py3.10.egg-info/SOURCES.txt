@@ -1,0 +1,8 @@
+setup.py
+agbot_msgs/__init__.py
+agbot_msgs.egg-info/PKG-INFO
+agbot_msgs.egg-info/SOURCES.txt
+agbot_msgs.egg-info/dependency_links.txt
+agbot_msgs.egg-info/top_level.txt
+agbot_msgs/action/__init__.py
+agbot_msgs/action/_agbot_arm_task.py

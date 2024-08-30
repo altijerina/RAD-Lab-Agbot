@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from agbot_msgs/action/AgbotArmTask.action
+// generated code does not contain a copyright notice
+
+
+module agbot_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct AgbotArmTask_Goal {
+      int32 task_number;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct AgbotArmTask_Result {
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct AgbotArmTask_Feedback {
+      int32 percentage;
+    };
+  };
+};

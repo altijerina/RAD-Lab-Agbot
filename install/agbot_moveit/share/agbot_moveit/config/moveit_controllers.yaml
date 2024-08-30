@@ -1,0 +1,27 @@
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - arm_controller
+    - gripper_controller
+
+  arm_controller:
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory    
+    default: true
+    joints:
+      - base_joint
+      - shoulder_joint
+      - elbow_joint
+      - wrist_joint
+      
+  gripper_controller:
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory  
+    default: true
+    joints:
+      - gripper_right_joint
+      - gripper_left_joint
+   
+
+       <launch>

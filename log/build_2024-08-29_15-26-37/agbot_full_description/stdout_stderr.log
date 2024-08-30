@@ -1,0 +1,82 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/albert/rad_ws/build/agbot_full_description
+-- Install configuration: ""
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//launch
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//launch/agbot_full_display.launch.py
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/right_finger.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/triangular_link.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/round_plate.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/left_finger.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/vertical_drive_arm.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/astra.jpg
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/claw_support.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/link.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/r200.jpg
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/horizontal_arm.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/r200.dae
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/astra.dae
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/basement.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/forward_drive_arm.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/right_tire.stl
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/lidar.stl
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/servo_plate.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/plate.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/base_plate.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/left_tire copy.stl
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/left_tire.stl
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/right_tire copy.stl
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//meshes/pi_camera.STL
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/ground_plane
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/ground_plane/model-1_2.sdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/ground_plane/model-1_3.sdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/ground_plane/model.config
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/ground_plane/model.sdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/ground_plane/model-1_4.sdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/basic_agbot_description
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/basic_agbot_description/agbot.sdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/basic_agbot_description/agbot_model.config
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/sun
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/sun/model-1_2.sdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/sun/model-1_3.sdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/sun/model.config
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/sun/model.sdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/sun/model-1_4.sdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//rviz
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//rviz/agbot_full_config.rviz
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full_common_properties.xacro
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full.xacro
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full_gazebo.xacro
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full_ros2_control.xacro
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//worlds
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//worlds/test_world.world
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//worlds/smalltown.world
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//worlds/turtlebot3_world.world
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//worlds/new_world.world
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//worlds/house.world
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//worlds/new_world-old.world
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//worlds/empty_world.world
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/ament_index/resource_index/package_run_dependencies/agbot_full_description
+-- Up-to-date: /home/albert/rad_ws/install/agbot_full_description/share/ament_index/resource_index/parent_prefix_path/agbot_full_description
+-- Up-to-date: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/environment/ament_prefix_path.sh
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/environment/path.sh
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/environment/path.dsv
+-- Up-to-date: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/local_setup.bash
+-- Up-to-date: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/local_setup.sh
+-- Up-to-date: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/local_setup.zsh
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/local_setup.dsv
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/package.dsv
+-- Up-to-date: /home/albert/rad_ws/install/agbot_full_description/share/ament_index/resource_index/packages/agbot_full_description
+-- Up-to-date: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/cmake/agbot_full_descriptionConfig.cmake
+-- Up-to-date: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/cmake/agbot_full_descriptionConfig-version.cmake
+-- Installing: /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/package.xml

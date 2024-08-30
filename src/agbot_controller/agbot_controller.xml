@@ -1,0 +1,11 @@
+<library path="agbot_controller">
+    <class name="agbot_controller/AgbotInterface"
+           type="agbot_controller/AgbotInterface"
+           base_class_type="hardware_interface::SystemInterface">
+        <description>
+            Agbot Hardware Interface
+        </description>
+
+    </class>
+
+</library>

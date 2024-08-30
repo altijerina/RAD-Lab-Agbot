@@ -1,0 +1,12 @@
+<library path="agbot_arm_controller">
+    <class name="agbot_arm_controller/AgbotArmInterface"
+           type="agbot_arm_controller/AgbotArmInterface"
+           base_class_type="hardware_interface::SystemInterface">
+           <!-- base_class_type="test_hardware_components/TestSystemCommandModes"> -->
+        <description>
+            AgbotArm Hardware Interface
+        </description>
+
+    </class>
+
+</library>

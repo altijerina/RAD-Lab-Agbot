@@ -1,0 +1,115 @@
+[0.170s] Invoking command in '/home/albert/rad_ws/build/agbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/rad_ws/src/agbot_description -DCMAKE_INSTALL_PREFIX=/home/albert/rad_ws/install/agbot_description
+[0.407s] -- The C compiler identification is GNU 11.4.0
+[0.659s] -- The CXX compiler identification is GNU 11.4.0
+[0.710s] -- Detecting C compiler ABI info
+[1.057s] -- Detecting C compiler ABI info - done
+[1.166s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.167s] -- Detecting C compile features
+[1.169s] -- Detecting C compile features - done
+[1.194s] -- Detecting CXX compiler ABI info
+[1.597s] -- Detecting CXX compiler ABI info - done
+[1.662s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.662s] -- Detecting CXX compile features
+[1.663s] -- Detecting CXX compile features - done
+[1.731s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.663s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[3.395s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.997s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.023s] -- Added test 'lint_cmake' to check CMake code style
+[4.045s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.092s] -- Added test 'xmllint' to check XML markup files
+[4.129s] -- Configuring done (3.9s)
+[4.145s] -- Generating done (0.0s)
+[4.152s] -- Build files have been written to: /home/albert/rad_ws/build/agbot_description
+[4.178s] Invoked command in '/home/albert/rad_ws/build/agbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/rad_ws/src/agbot_description -DCMAKE_INSTALL_PREFIX=/home/albert/rad_ws/install/agbot_description
+[4.186s] Invoking command in '/home/albert/rad_ws/build/agbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/rad_ws/build/agbot_description -- -j8 -l8
+[4.402s] Invoked command in '/home/albert/rad_ws/build/agbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/rad_ws/build/agbot_description -- -j8 -l8
+[4.611s] Invoking command in '/home/albert/rad_ws/build/agbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/rad_ws/build/agbot_description
+[4.628s] -- Install configuration: ""
+[4.629s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch
+[4.629s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_slam.launch.py
+[4.632s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_display.launch.py
+[4.633s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_gazebo.launch.py
+[4.633s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_arm_display.launch.py
+[4.634s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/robot_state_publisher.launch.py
+[4.635s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_arm_gazebo.launch.py
+[4.635s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_world.launch.py
+[4.635s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes
+[4.635s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/right_finger.STL
+[4.636s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/triangular_link.STL
+[4.642s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/round_plate.STL
+[4.642s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/left_finger.STL
+[4.643s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/vertical_drive_arm.STL
+[4.648s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/astra.jpg
+[4.649s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/claw_support.STL
+[4.652s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/link.STL
+[4.655s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/r200.jpg
+[4.656s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/horizontal_arm.STL
+[4.660s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/r200.dae
+[4.661s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/astra.dae
+[4.680s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/basement.STL
+[4.688s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/forward_drive_arm.STL
+[4.692s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/right_tire.stl
+[4.695s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/lidar.stl
+[4.697s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/servo_plate.STL
+[4.698s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/plate.STL
+[4.712s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/base_plate.STL
+[4.714s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/left_tire copy.stl
+[4.717s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/left_tire.stl
+[4.720s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/right_tire copy.stl
+[4.724s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//meshes/pi_camera.STL
+[4.724s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models
+[4.725s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/ground_plane
+[4.725s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/ground_plane/model-1_2.sdf
+[4.726s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/ground_plane/model-1_3.sdf
+[4.726s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/ground_plane/model.config
+[4.727s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/ground_plane/model.sdf
+[4.728s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/ground_plane/model-1_4.sdf
+[4.728s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/basic_agbot_description
+[4.729s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/basic_agbot_description/agbot.sdf
+[4.729s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/basic_agbot_description/agbot_model.config
+[4.730s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/sun
+[4.731s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/sun/model-1_2.sdf
+[4.731s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/sun/model-1_3.sdf
+[4.732s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/sun/model.config
+[4.733s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/sun/model.sdf
+[4.733s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/sun/model-1_4.sdf
+[4.735s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//rviz
+[4.735s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//rviz/agbot_urdf_config.rviz
+[4.736s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//rviz/agbot_arm_config.rviz
+[4.737s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//rviz/agbot_config.rviz
+[4.737s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf
+[4.738s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_ros2_control.xacro
+[4.739s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/common_properties.xacro
+[4.739s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_full.xacro
+[4.740s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm_ros2_control.xacro
+[4.740s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_gazebo.xacro
+[4.741s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm_gazebo.xacro
+[4.742s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm.urdf
+[4.742s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_common_properties.xacro
+[4.743s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm.xacro
+[4.744s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot.urdf.xacro
+[4.744s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//worlds
+[4.745s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//worlds/test_world.world
+[4.745s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//worlds/smalltown.world
+[4.746s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//worlds/turtlebot3_world.world
+[4.747s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//worlds/new_world.world
+[4.749s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//worlds/house.world
+[4.750s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//worlds/new_world-old.world
+[4.751s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description//worlds/empty_world.world
+[4.752s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/ament_index/resource_index/package_run_dependencies/agbot_description
+[4.756s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/ament_index/resource_index/parent_prefix_path/agbot_description
+[4.758s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/environment/ament_prefix_path.sh
+[4.758s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/environment/ament_prefix_path.dsv
+[4.758s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/environment/path.sh
+[4.760s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/environment/path.dsv
+[4.760s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/local_setup.bash
+[4.760s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/local_setup.sh
+[4.761s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/local_setup.zsh
+[4.762s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/local_setup.dsv
+[4.763s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/package.dsv
+[4.764s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/ament_index/resource_index/packages/agbot_description
+[4.765s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/cmake/agbot_descriptionConfig.cmake
+[4.766s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/cmake/agbot_descriptionConfig-version.cmake
+[4.766s] -- Installing: /home/albert/rad_ws/install/agbot_description/share/agbot_description/package.xml
+[4.799s] Invoked command in '/home/albert/rad_ws/build/agbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/rad_ws/build/agbot_description
