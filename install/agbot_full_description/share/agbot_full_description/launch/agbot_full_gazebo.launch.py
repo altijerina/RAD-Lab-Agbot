@@ -24,8 +24,8 @@ def generate_launch_description():
     # declare_world_arg = DeclareLaunchArgument('world', default_value=world_file_path, description='Gazebo world file')      
     
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')  
-    x_pose = LaunchConfiguration('x_pose', default='4.0')
-    y_pose = LaunchConfiguration('y_pose', default='1.0')    
+    x_pose = LaunchConfiguration('x_pose', default='0.0')
+    y_pose = LaunchConfiguration('y_pose', default='0.0')    
 
     model_arg = DeclareLaunchArgument(name='model', default_value=os.path.join(
                                         ag_robot_description, 'urdf', 'agbot_full.xacro'

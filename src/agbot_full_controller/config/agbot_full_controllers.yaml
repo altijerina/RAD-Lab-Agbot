@@ -2,6 +2,9 @@ controller_manager:
   ros__parameters:
     update_rate: 100 # Hz
 
+    prismatic_joint_position_controller:
+      type: effort_controllers/JointPositionController
+    
     arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
@@ -45,12 +48,27 @@ gripper_controller:
     open_loop_control: true
     allow_integration_in_goal_trajectories: true
 
+prismatic_joint_position_controller:
+  ros__parameters:
+    joint: arm_base_to_arm_car_joint
+    pid:
+      p: 100.0
+      i: 0.1
+      d: 10.0
+      i_clamp_min: -1.0
+      i_clamp_max: 1.0
+
+    command_timeout: 0.1 
+    limits:
+      lower: -0.381
+      upper: 1.3716    
+
 
 
 diff_drive_controller:
   ros__parameters:
-    left_wheel_name: ["base_left_wheel_joint"]
-    right_wheel_name: ["base_right_wheel_joint"]
+    left_wheel_names: ["base_left_wheel_joint"]
+    right_wheel_names: ["base_right_wheel_joint"]
 
     wheel_separation: 0.308
     wheel_radius: 0.033  

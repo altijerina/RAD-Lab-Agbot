@@ -15,7 +15,7 @@
     <xacro:property name="effort" value="30.0" />
     <xacro:property name="velocity" value="10.0" />
     <xacro:property name="scale" value="0.0025 0.0025 0.0025"/>
-    <xacro:property name="wheel_scale" value="0.002 0.002 0.002"/>  
+    <xacro:property name="wheel_scale" value="0.006 0.006 0.006"/>  
     <xacro:property name="arm_scale" value="0.002 0.002 0.002"/>
     <xacro:property name="claw_scale" value="0.004 0.004 0.004"/>      
 
@@ -42,9 +42,9 @@
         </transmission>
     </xacro:macro>
 
-    <xacro:property name="base_length" value="0.35" />
-    <xacro:property name="base_width" value="0.25" />
-    <xacro:property name="base_height" value="0.10" /> 
+    <xacro:property name="base_length" value="1.8288" />
+    <xacro:property name="base_width" value="1.8288" />
+    <xacro:property name="base_height" value="0.9144" /> 
     <xacro:property name="wheel_radius" value="0.033" />
     <xacro:property name="wheel_length" value="0.05" />
     <xacro:property name="mast_length" value="0.05" />
@@ -58,7 +58,7 @@
     <xacro:property name = "horizontal_arm_length" value = "0.740" />
     <xacro:property name = "horizontal_arm_width" value = "0.05" />
     <xacro:property name = "horizontal_arm_height" value = "0.005" /> 
-    <xacro:property name = "cylinder_radius" value = "0.015" />
+    <xacro:property name = "cylinder_radius" value = "0.06" />
     <xacro:property name = "cylinder_length" value = "0.18" />     
 
     

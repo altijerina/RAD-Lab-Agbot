@@ -1,6 +1,7 @@
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_slam.launch.py
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_display.launch.py
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_gazebo.launch.py
+/home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_arm_extender_display.launch.py
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_arm_display.launch.py
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/robot_state_publisher.launch.py
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//launch/agbot_arm_gazebo.launch.py
@@ -42,6 +43,7 @@
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//models/sun/model-1_4.sdf
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//rviz/agbot_urdf_config.rviz
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//rviz/agbot_arm_config.rviz
+/home/albert/rad_ws/install/agbot_description/share/agbot_description//rviz/agbot_arm_extender_config.rviz
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//rviz/agbot_config.rviz
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_ros2_control.xacro
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/common_properties.xacro
@@ -50,7 +52,10 @@
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm_ros2_control.xacro
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_gazebo.xacro
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm_gazebo.xacro
+/home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm_extender_gazebo.xacro
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_full_gazebo.xacro
+/home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm_extender.xacro
+/home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm_extender_ros2_control.xacro
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_full_ros2_control.xacro
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_arm.urdf
 /home/albert/rad_ws/install/agbot_description/share/agbot_description//urdf/agbot_common_properties.xacro

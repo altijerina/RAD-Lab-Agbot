@@ -2,14 +2,14 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="agbot_arm">
 
 
-    <xacro:property name = "forward_drive_arm_length" value = "1.00" />
+    <xacro:property name = "forward_drive_arm_length" value = "0.75" />
     <xacro:property name = "forward_drive_arm_width" value = "0.05" />
     <xacro:property name = "forward_drive_arm_height" value = "0.005" />
-    <xacro:property name = "horizontal_arm_length" value = "0.740" />
+    <xacro:property name = "horizontal_arm_length" value = "0.555" />
     <xacro:property name = "horizontal_arm_width" value = "0.05" />
     <xacro:property name = "horizontal_arm_height" value = "0.005" /> 
     <xacro:property name = "cylinder_radius" value = "0.015" />
-    <xacro:property name = "cylinder_length" value = "0.18" /> 
+    <xacro:property name = "cylinder_length" value = "0.18" />   
 
     <!-- Include Gazebo Parameters -->
     <xacro:include filename="$(find agbot_description)/urdf/agbot_arm_gazebo.xacro" />
@@ -23,7 +23,7 @@
     <xacro:property name="PI" value="3.14159265359" />
     <xacro:property name="effort" value="30.0" />
     <xacro:property name="velocity" value="10.0" />
-    <xacro:property name="arm_scale" value="0.002 0.002 0.002"/>
+    <xacro:property name="arm_scale" value="0.0015 0.0015 0.002"/>
     <xacro:property name="claw_scale" value="0.004 0.004 0.004"/>
 
     <!-- Useful Macros -->
@@ -55,14 +55,14 @@
     <link name="base_link">
         <xacro:default_inertia mass="1.0"/>
         <visual>
-            <origin xyz="-0.1 -0.1 0" rpy="0 0 0"/>
+            <origin xyz="-0.077 -0.075 0" rpy="0 0 0"/>
             <geometry>
                 <mesh filename="file://$(find agbot_description)/meshes/basement.STL" scale="${arm_scale}"/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
-            <origin xyz="-0.1 -0.1 0" rpy="0 0 0"/>
+            <origin xyz="-0.075 -.075 0" rpy="0 0 0"/>
             <geometry>
                 <mesh filename="file://$(find agbot_description)/meshes/basement.STL" scale="${arm_scale}"/>
             </geometry> 
@@ -72,7 +72,7 @@
     <link name="base_plate">
         <xacro:default_inertia mass="0.1"/>
          <visual>
-            <origin xyz="-0.076 -0.0798 -0.121" rpy="0 0 0"/>
+            <origin xyz="-0.059 -0.060 -0.121" rpy="0 0 0"/>
             <geometry>
                 <mesh filename="file://$(find agbot_description)/meshes/base_plate.STL" scale="${arm_scale}"/>
             </geometry>
@@ -89,14 +89,14 @@
     <link name="forward_drive_arm">
         <xacro:default_inertia mass="0.1"/>
         <visual>
-            <origin xyz="0.01 -0.006 0.495" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <origin xyz="-0.005 -0.006 0.38" rpy="0 ${PI / 2} ${PI / 2}"/>
             <geometry>
                 <box size="${forward_drive_arm_length} ${forward_drive_arm_width} ${forward_drive_arm_height}" />
             </geometry>
             <material name="yellow"/>
         </visual>
         <collision>
-            <origin xyz="0.01 -0.006 0.495" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <origin xyz="0.01 -0.006 0" rpy="0 ${PI / 2} ${PI / 2}"/>
             <geometry>
                 <box size="${forward_drive_arm_length} ${forward_drive_arm_width} ${forward_drive_arm_height}" />
             </geometry> 
@@ -124,14 +124,14 @@
     <link name="horizontal_arm">
         <xacro:default_inertia mass="0.1"/>
         <visual>
-            <origin xyz="0 0 0.37" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <origin xyz="0 0 0.275" rpy="0 ${PI / 2} ${PI / 2}"/>
             <geometry>
                 <box size="${horizontal_arm_length} ${horizontal_arm_width} ${horizontal_arm_height}" />
             </geometry>
             <material name="green"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0.37" rpy="0 ${PI / 2} ${PI / 2}"/>
+            <origin xyz="0 0 0.275" rpy="0 ${PI / 2} ${PI / 2}"/>
             <geometry>
                 <box size="${horizontal_arm_length} ${horizontal_arm_width} ${horizontal_arm_height}" />
             </geometry> 
@@ -246,7 +246,7 @@
     <joint name="shoulder_joint" type="revolute">
         <parent link="base_plate"/>
         <child link="forward_drive_arm"/>
-        <origin xyz="0 0.006 0.07" rpy="-${PI/2} 0 0"/>
+        <origin xyz="0 0 0.066" rpy="-${PI/2} 0 0"/>
         <axis xyz="1 0 0"/>
         <limit lower="0" upper="4.0" effort="${effort}" velocity="${velocity}"/>
     </joint>   

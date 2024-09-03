@@ -26,6 +26,10 @@
         <color rgba="0.5 0.5 0.5 1.0"/>
     </material>
 
+    <material name="ClearGrey">
+        <color rgba="0.2 0.2 0.2 0.6"/>
+      </material>    
+
     <material name="orange">
         <color rgba="1.0 0.4235 0.0392 1.0"/>
     </material>
