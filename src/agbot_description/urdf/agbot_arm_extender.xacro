@@ -38,7 +38,8 @@
     <xacro:property name="scale" value="0.0025 0.0025 0.0025"/>
     <xacro:property name="wheel_scale" value="0.006 0.006 0.006"/>  
     <xacro:property name="arm_scale" value="0.0015 0.0015 0.002"/>
-    <xacro:property name="claw_scale" value="0.004 0.004 0.004"/>   
+    <xacro:property name="claw_scale" value="0.004 0.004 0.004"/> 
+    <xacro:property name="claw_camera_scale" value="0.002 0.002 0.002"/>  
 
     <!-- Useful Macros -->
     <xacro:macro name="default_inertia" params="mass">
@@ -164,16 +165,13 @@
         </visual>
         <collision>
             <geometry>
-                 <box size="${arm_base_rail_length} ${arm_base_rail_width} ${arm_base_rail_height}"/>
+                <box size="${arm_base_rail_length} ${arm_base_rail_width} ${arm_base_rail_height}"/>
             </geometry>
-            <origin xyz="${arm_base_rail_length/2} ${arm_base_rail_width/2} ${arm_base_rail_height/2}" rpy="0 0 0"/>           
+            <origin xyz="0 0 0" rpy="0 0 0"/>           
         </collision>
         <xacro:box_inertia m="2.0" l="${arm_base_rail_length}" w="${arm_base_rail_width}" h="${arm_base_rail_height}"
-                           xyz = "0 0 ${arm_base_rail_height/2}" rpy="0 0 0" />     
-    </link>
-    <gazebo reference="arm_base_rail_link">
-        <material>Gazebo/White</material>
-    </gazebo>       
+                        xyz = "0 0 ${arm_base_rail_height/2}" rpy="0 0 0" />     
+    </link>     
 
     <link name="arm_mid_rail_link">
         <visual>
@@ -181,20 +179,17 @@
                 <box size="${arm_base_rail_length} ${arm_base_rail_width} ${arm_base_rail_height}"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
-            <material name="white"/>
+            <material name="black"/>
         </visual>
         <collision>
             <geometry>
                  <box size="${arm_base_rail_length} ${arm_base_rail_width} ${arm_base_rail_height}"/>
             </geometry>
-            <origin xyz="${arm_base_rail_length/2} ${arm_base_rail_width/2} ${arm_base_rail_height/2}" rpy="0 0 0"/>           
+            <origin xyz="0 0 0" rpy="0 0 0"/>           
         </collision>
         <xacro:box_inertia m="2.0" l="${arm_base_rail_length}" w="${arm_base_rail_width}" h="${arm_base_rail_height}"
                            xyz = "0 0 ${arm_base_rail_height/2}" rpy="0 0 0" />     
-    </link>
-    <gazebo reference="arm_mid_rail_link">
-        <material>Gazebo/White</material>
-    </gazebo> 
+    </link>   
 
     <link name="arm_base_car_link">
         <visual>
@@ -202,20 +197,17 @@
                 <box size="${arm_base_car_length} ${arm_base_car_width} ${arm_base_car_height}"/>
             </geometry>
             <origin xyz="0 0 ${arm_base_car_height/2}" rpy="0 0 0"/>
-            <material name="black"/>
+            <material name="white"/>
         </visual>
         <collision>
             <geometry>
-                 <box size="${arm_base_car_length} ${arm_base_car_width} ${arm_base_car_height}"/>
+                <box size="${arm_base_car_length} ${arm_base_car_width} ${arm_base_car_height}"/>
             </geometry>
-            <origin xyz="${arm_base_car_length/2} ${arm_base_car_width/2} ${arm_base_car_height/2}" rpy="0 0 0"/>           
+            <origin xyz="0 0 ${arm_base_car_height/2}" rpy="0 0 0"/>           
         </collision>
         <xacro:box_inertia m="2.0" l="${arm_base_car_length}" w="${arm_base_car_width}" h="${arm_base_car_height}"
                            xyz = "0 0 ${arm_base_car_height/2}" rpy="0 0 0" />     
-    </link>  
-    <gazebo reference="arm_base_car_link">
-        <material>Gazebo/Black</material>
-    </gazebo>        
+    </link>           
 
     <link name="arm_base_link">
         <xacro:default_inertia mass="1.0"/>
@@ -378,16 +370,16 @@
     <link name="arm_rgb_camera">
         <xacro:default_inertia mass="0.001"/>
         <visual>
-            <origin xyz="-0.03 -0.055 0.05" rpy="0 ${PI/2} 0"/>
+            <origin xyz="-0.03 -0.028 0.025" rpy="0 ${PI/2} 0"/>
             <geometry>
-                <mesh filename="file://$(find agbot_description)/meshes/pi_camera.STL" scale="${claw_scale}"/>
+                <mesh filename="file://$(find agbot_description)/meshes/pi_camera.STL" scale="${claw_camera_scale}"/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
-            <origin xyz="0 -.03 0" rpy="0 ${PI/2} 0"/>
+            <origin xyz="-0.03 -0.028 0.025" rpy="0 ${PI/2} 0"/>
             <geometry>
-                <mesh filename="file://$(find agbot_description)/meshes/pi_camera.STL" scale="${claw_scale}"/>
+                <mesh filename="file://$(find agbot_description)/meshes/pi_camera.STL" scale="${claw_camera_scale}"/>
             </geometry> 
         </collision>
     </link>    
@@ -515,13 +507,13 @@
     <joint name="arm_camera_optical_joint" type="fixed">
         <parent link="claw_support"/>
         <child link="arm_rgb_camera_optical"/>
-        <origin xyz = "0 .13 0.085" rpy = "0 0 0" />
+        <origin xyz = "0 .10 0.085" rpy = "0 0 0" />
     </joint> 
 
     <joint name = "arm_rgb_camera_joint" type = "fixed" >        
         <parent link = "arm_rgb_camera_optical" />
         <child link = "arm_rgb_camera" />
-        <origin xyz="0 0 0.015" rpy="0 -${PI/2} 0"/>
+        <origin xyz="0 0 0.03" rpy="0 -${PI/2} 0"/>
     </joint> 
 
     <xacro:default_transmission name="arm_base_to_arm_car_joint" />

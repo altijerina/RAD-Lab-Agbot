@@ -1,0 +1,267 @@
+[0.511s] Invoking command in '/home/albert/rad_ws/build/agbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/rad_ws/src/agbot_msgs -DCMAKE_INSTALL_PREFIX=/home/albert/rad_ws/install/agbot_msgs
+[0.862s] -- The C compiler identification is GNU 11.4.0
+[1.329s] -- The CXX compiler identification is GNU 11.4.0
+[1.441s] -- Detecting C compiler ABI info
+[1.979s] -- Detecting C compiler ABI info - done
+[2.194s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.195s] -- Detecting C compile features
+[2.200s] -- Detecting C compile features - done
+[2.246s] -- Detecting CXX compiler ABI info
+[2.968s] -- Detecting CXX compiler ABI info - done
+[3.129s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.132s] -- Detecting CXX compile features
+[3.134s] -- Detecting CXX compile features - done
+[3.190s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.633s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[6.491s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[7.297s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.434s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.630s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.868s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.257s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.842s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[13.526s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[16.986s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[18.174s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[18.178s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[18.179s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[18.179s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[18.179s]   the cmake_policy command to set the policy and suppress this warning.
+[18.179s] 
+[18.180s] Call Stack (most recent call first):
+[18.180s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[18.180s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[18.180s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[18.180s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[18.181s] [0m
+[18.273s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[18.301s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[18.302s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[18.302s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[18.302s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[18.303s]   the cmake_policy command to set the policy and suppress this warning.
+[18.303s] 
+[18.303s] Call Stack (most recent call first):
+[18.303s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[18.304s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[18.304s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[18.304s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[18.304s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[18.304s] [0m
+[18.384s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[18.384s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[18.384s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[18.384s]   the cmake_policy command to set the policy and suppress this warning.
+[18.384s] 
+[18.384s] Call Stack (most recent call first):
+[18.385s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[18.385s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[18.385s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[18.385s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[18.385s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[18.385s] [0m
+[18.429s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[18.430s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[18.430s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[18.430s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[18.501s] -- Found PythonExtra: .so
+[18.887s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[19.054s] -- Added test 'lint_cmake' to check CMake code style
+[19.062s] -- Added test 'xmllint' to check XML markup files
+[19.075s] -- Configuring done (18.6s)
+[19.169s] -- Generating done (0.1s)
+[19.176s] -- Build files have been written to: /home/albert/rad_ws/build/agbot_msgs
+[19.198s] Invoked command in '/home/albert/rad_ws/build/agbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/rad_ws/src/agbot_msgs -DCMAKE_INSTALL_PREFIX=/home/albert/rad_ws/install/agbot_msgs
+[19.201s] Invoking command in '/home/albert/rad_ws/build/agbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/rad_ws/build/agbot_msgs -- -j8 -l8
+[19.253s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[19.271s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[19.280s] [  6%] Built target ament_cmake_python_copy_agbot_msgs
+[20.221s] running egg_info
+[20.222s] creating agbot_msgs.egg-info
+[20.222s] writing agbot_msgs.egg-info/PKG-INFO
+[20.223s] writing dependency_links to agbot_msgs.egg-info/dependency_links.txt
+[20.223s] writing top-level names to agbot_msgs.egg-info/top_level.txt
+[20.224s] writing manifest file 'agbot_msgs.egg-info/SOURCES.txt'
+[20.229s] reading manifest file 'agbot_msgs.egg-info/SOURCES.txt'
+[20.230s] writing manifest file 'agbot_msgs.egg-info/SOURCES.txt'
+[20.280s] [  6%] Built target ament_cmake_python_build_agbot_msgs_egg
+[20.485s] [  9%] [32mBuilding C object CMakeFiles/agbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/agbot_msgs/action/detail/agbot_arm_task__functions.c.o[0m
+[20.693s] [ 12%] [32m[1mLinking C shared library libagbot_msgs__rosidl_generator_c.so[0m
+[20.748s] [ 12%] Built target agbot_msgs__rosidl_generator_c
+[20.766s] [ 16%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.767s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[20.796s] [ 19%] Built target agbot_msgs__cpp
+[20.820s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[21.751s] [ 25%] [32mBuilding CXX object CMakeFiles/agbot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/agbot_msgs/action/agbot_arm_task__type_support.cpp.o[0m
+[21.862s] [ 29%] [32mBuilding C object CMakeFiles/agbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/agbot_msgs/action/detail/agbot_arm_task__type_support.c.o[0m
+[21.865s] [ 32%] [32mBuilding CXX object CMakeFiles/agbot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/agbot_msgs/action/detail/agbot_arm_task__type_support_c.cpp.o[0m
+[21.870s] [ 35%] [32m[1mLinking CXX shared library libagbot_msgs__rosidl_typesupport_c.so[0m
+[21.957s] [ 35%] Built target agbot_msgs__rosidl_typesupport_c
+[21.978s] [ 38%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[21.988s] [ 41%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[21.988s] [ 45%] [32m[1mLinking C shared library libagbot_msgs__rosidl_typesupport_introspection_c.so[0m
+[22.058s] [ 45%] Built target agbot_msgs__rosidl_typesupport_introspection_c
+[22.081s] [ 48%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[22.976s] [ 51%] [32m[1mLinking CXX shared library libagbot_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[23.055s] [ 54%] [32mBuilding CXX object CMakeFiles/agbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/agbot_msgs/action/detail/agbot_arm_task__type_support.cpp.o[0m
+[23.202s] [ 58%] [32mBuilding CXX object CMakeFiles/agbot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/agbot_msgs/action/agbot_arm_task__type_support.cpp.o[0m
+[23.216s] [ 58%] Built target agbot_msgs__rosidl_typesupport_fastrtps_c
+[23.291s] [ 61%] [32mBuilding CXX object CMakeFiles/agbot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/agbot_msgs/action/detail/dds_fastrtps/agbot_arm_task__type_support.cpp.o[0m
+[24.361s] [ 64%] [32m[1mLinking CXX shared library libagbot_msgs__rosidl_typesupport_cpp.so[0m
+[24.464s] [ 64%] Built target agbot_msgs__rosidl_typesupport_cpp
+[24.507s] [ 67%] [32m[1mLinking CXX shared library libagbot_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[24.603s] [ 70%] [32m[1mLinking CXX shared library libagbot_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[24.667s] [ 70%] Built target agbot_msgs__rosidl_typesupport_introspection_cpp
+[24.746s] [ 70%] Built target agbot_msgs__rosidl_typesupport_fastrtps_cpp
+[24.776s] [ 70%] Built target agbot_msgs
+[24.805s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[26.816s] [ 74%] Built target agbot_msgs__py
+[26.850s] [ 77%] [32mBuilding C object CMakeFiles/agbot_msgs__rosidl_generator_py.dir/rosidl_generator_py/agbot_msgs/action/_agbot_arm_task_s.c.o[0m
+[27.104s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/agbot_msgs/libagbot_msgs__rosidl_generator_py.so[0m
+[27.163s] [ 80%] Built target agbot_msgs__rosidl_generator_py
+[27.196s] [ 83%] [32mBuilding C object CMakeFiles/agbot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/agbot_msgs/_agbot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[27.197s] [ 87%] [32mBuilding C object CMakeFiles/agbot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/agbot_msgs/_agbot_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[27.198s] [ 90%] [32mBuilding C object CMakeFiles/agbot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/agbot_msgs/_agbot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[27.431s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/agbot_msgs/agbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.445s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/agbot_msgs/agbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.463s] [100%] [32m[1mLinking C shared library rosidl_generator_py/agbot_msgs/agbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.495s] [100%] Built target agbot_msgs__rosidl_typesupport_introspection_c__pyext
+[27.523s] [100%] Built target agbot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[27.532s] [100%] Built target agbot_msgs__rosidl_typesupport_c__pyext
+[27.542s] Invoked command in '/home/albert/rad_ws/build/agbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/rad_ws/build/agbot_msgs -- -j8 -l8
+[27.775s] Invoking command in '/home/albert/rad_ws/build/agbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/rad_ws/build/agbot_msgs
+[27.780s] -- Install configuration: ""
+[27.781s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/ament_index/resource_index/rosidl_interfaces/agbot_msgs
+[27.781s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs
+[27.781s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/msg
+[27.781s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/msg/rosidl_generator_c__visibility_control.h
+[27.781s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action
+[27.782s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail
+[27.782s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__struct.h
+[27.782s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__type_support.h
+[27.782s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__functions.c
+[27.782s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__functions.h
+[27.782s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/agbot_arm_task.h
+[27.782s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/environment/library_path.sh
+[27.783s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/environment/library_path.dsv
+[27.783s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_generator_c.so
+[27.784s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_generator_c.so" to ""
+[27.784s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs
+[27.784s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/msg
+[27.784s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[27.784s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action
+[27.784s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail
+[27.784s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__rosidl_typesupport_fastrtps_c.h
+[27.785s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_fastrtps_c.so
+[27.785s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[27.785s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs
+[27.785s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action
+[27.785s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail
+[27.786s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__traits.hpp
+[27.786s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__builder.hpp
+[27.786s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__struct.hpp
+[27.786s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/agbot_arm_task.hpp
+[27.786s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs
+[27.786s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/msg
+[27.786s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[27.787s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action
+[27.787s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail
+[27.787s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__rosidl_typesupport_fastrtps_cpp.hpp
+[27.787s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/dds_fastrtps
+[27.787s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[27.787s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[27.787s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs
+[27.788s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/msg
+[27.788s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[27.788s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action
+[27.788s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail
+[27.788s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__rosidl_typesupport_introspection_c.h
+[27.788s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__type_support.c
+[27.789s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_introspection_c.so
+[27.789s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_introspection_c.so" to ""
+[27.789s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_c.so
+[27.790s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_c.so" to ""
+[27.790s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs
+[27.790s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action
+[27.790s] -- Up-to-date: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail
+[27.790s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__rosidl_typesupport_introspection_cpp.hpp
+[27.790s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/include/agbot_msgs/agbot_msgs/action/detail/agbot_arm_task__type_support.cpp
+[27.791s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_introspection_cpp.so
+[27.791s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[27.792s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_cpp.so
+[27.792s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_typesupport_cpp.so" to ""
+[27.792s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/environment/pythonpath.sh
+[27.792s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/environment/pythonpath.dsv
+[27.792s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs-0.0.0-py3.10.egg-info
+[27.793s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[27.793s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[27.793s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[27.793s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[27.793s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs
+[27.793s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/__init__.py
+[27.794s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/action
+[27.794s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/action/__init__.py
+[27.794s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/action/_agbot_arm_task.py
+[27.794s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/action/_agbot_arm_task_s.c
+[27.794s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/_agbot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[27.794s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/agbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[27.795s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/agbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[27.795s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/agbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[27.795s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/_agbot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[27.795s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/_agbot_msgs_s.ep.rosidl_typesupport_c.c
+[27.795s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/libagbot_msgs__rosidl_generator_py.so
+[27.871s] Listing '/home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs'...
+[27.871s] Compiling '/home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/__init__.py'...
+[27.872s] Listing '/home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/action'...
+[27.872s] Compiling '/home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/action/__init__.py'...
+[27.872s] Compiling '/home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/action/_agbot_arm_task.py'...
+[27.877s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/agbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[27.878s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/agbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[27.878s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/agbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[27.879s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/agbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[27.879s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/agbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[27.880s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/local/lib/python3.10/dist-packages/agbot_msgs/agbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[27.880s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_generator_py.so
+[27.880s] -- Set non-toolchain portion of runtime path of "/home/albert/rad_ws/install/agbot_msgs/lib/libagbot_msgs__rosidl_generator_py.so" to ""
+[27.880s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/action/AgbotArmTask.idl
+[27.881s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/action/AgbotArmTask.action
+[27.881s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/ament_index/resource_index/package_run_dependencies/agbot_msgs
+[27.881s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/ament_index/resource_index/parent_prefix_path/agbot_msgs
+[27.881s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/environment/ament_prefix_path.sh
+[27.882s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/environment/ament_prefix_path.dsv
+[27.882s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/environment/path.sh
+[27.882s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/environment/path.dsv
+[27.882s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/local_setup.bash
+[27.882s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/local_setup.sh
+[27.882s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/local_setup.zsh
+[27.883s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/local_setup.dsv
+[27.883s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/package.dsv
+[27.883s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/ament_index/resource_index/packages/agbot_msgs
+[27.883s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/export_agbot_msgs__rosidl_generator_cExport.cmake
+[27.883s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/export_agbot_msgs__rosidl_generator_cExport-noconfig.cmake
+[27.884s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/export_agbot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[27.884s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/export_agbot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[27.884s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/export_agbot_msgs__rosidl_generator_cppExport.cmake
+[27.884s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/export_agbot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[27.884s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/export_agbot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[27.885s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[27.885s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[27.885s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgs__rosidl_typesupport_cExport.cmake
+[27.885s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[27.886s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[27.886s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[27.886s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgs__rosidl_typesupport_cppExport.cmake
+[27.886s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[27.886s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/export_agbot_msgs__rosidl_generator_pyExport.cmake
+[27.887s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/export_agbot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[27.887s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/rosidl_cmake-extras.cmake
+[27.887s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[27.887s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[27.887s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[27.888s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[27.888s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[27.888s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[27.888s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgsConfig.cmake
+[27.888s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/cmake/agbot_msgsConfig-version.cmake
+[27.888s] -- Installing: /home/albert/rad_ws/install/agbot_msgs/share/agbot_msgs/package.xml
+[27.891s] Invoked command in '/home/albert/rad_ws/build/agbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/rad_ws/build/agbot_msgs

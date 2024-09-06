@@ -38,15 +38,15 @@ def generate_launch_description():
             "--controller-manager",
             "/controller_manager",
         ],
-    )
-    
-    prismatic_controller_spawner = Node(
+    )  
+
+    prismatic_joint_position_controller = Node(        
         package="controller_manager",
         executable="spawner",
         arguments=["prismatic_joint_position_controller", 
                    "--controller-manager", 
                    "/controller_manager"],
-    )     
+    )           
 
     arm_controller_spawner = Node(
         package="controller_manager",
@@ -76,7 +76,7 @@ def generate_launch_description():
         [   
             robot_state_publisher_node, 
             joint_state_broadcaster_spawner,
-            prismatic_controller_spawner,
+            prismatic_joint_position_controller,
             arm_controller_spawner,
             gripper_controller_spawner,
             wheel_controller_spawner,

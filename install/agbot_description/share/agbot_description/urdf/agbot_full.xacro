@@ -184,13 +184,6 @@
    <link name="laser_frame">       
    </link>    
 
-    <!-- Transition Joint  -->
-    <joint name = "body_arm_joint" type = "fixed">
-      <parent link = "base_link"/>
-      <child link = "arm_base_link" />
-      <origin xyz = "${base_length/3} 0 ${base_height}" rpy = "0 0 0" />
-   </joint>   
-
    <!-- Robot Arm -->
    <link name="arm_base_link">
       <xacro:default_inertia mass="1.0"/>
@@ -418,13 +411,20 @@
       <child link="laser_frame"/>
       <origin xyz="0 0 ${mast_height + 0.02}" rpy="0 0 0"/>
    </joint>   
+
+    <!-- Transition Joint  -->
+    <joint name = "body_arm_joint" type = "fixed">
+        <parent link = "base_link"/>
+        <child link = "arm_base_link" />
+        <origin xyz = "${base_length/3} 0 ${base_height}" rpy = "0 0 0" />
+     </joint>    
    
    <!-- Robot Arm -->
-   <joint name="virtual_joint" type="fixed">
+   <!-- <joint name="virtual_joint" type="fixed">
       <parent link="world"/>
       <child link="arm_base_link"/>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-   </joint> 
+   </joint>  -->
 
    <joint name ="arm_base_joint" type="revolute">
          <parent link="arm_base_link"/>

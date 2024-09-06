@@ -36,6 +36,18 @@
     </sensor>
   </gazebo>    
 
+  <gazebo reference="arm_base_rail_link">
+    <material>Gazebo/White</material>
+  </gazebo>  
+
+  <gazebo reference="arm_mid_rail_link">
+      <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="arm_base_car_link">
+      <material>Gazebo/White</material>
+  </gazebo>   
+
   <gazebo reference="arm_base_link">
     <material>Gazebo/Blue</material>
   </gazebo>

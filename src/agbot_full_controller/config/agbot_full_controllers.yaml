@@ -1,21 +1,36 @@
 controller_manager:
   ros__parameters:
-    update_rate: 100 # Hz
+    update_rate: 100  # Hz
 
     prismatic_joint_position_controller:
-      type: effort_controllers/JointPositionController
-    
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
     arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
+
 
     gripper_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
     diff_drive_controller:
-      type: diff_drive_controller/DiffDriveController      
+      type: diff_drive_controller/DiffDriveController       
+
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
+
+prismatic_joint_position_controller:
+  ros__parameters:
+    joints:
+      - base_rail_to_ mid_rail_joint
+      - mid_rail_to_arm_car_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      # - velocity
+      # - effort
 
 arm_controller:
   ros__parameters:
@@ -24,46 +39,19 @@ arm_controller:
       - shoulder_joint
       - elbow_joint
       - wrist_joint
-
     command_interfaces:
       - position
-
     state_interfaces:
       - position
-
-    open_loop_control: true
-    allow_integration_in_goal_trajectories: true
 
 gripper_controller:
   ros__parameters:
     joints:
       - gripper_right_joint
-      
     command_interfaces:
       - position
-
     state_interfaces:
       - position
-
-    open_loop_control: true
-    allow_integration_in_goal_trajectories: true
-
-prismatic_joint_position_controller:
-  ros__parameters:
-    joint: arm_base_to_arm_car_joint
-    pid:
-      p: 100.0
-      i: 0.1
-      d: 10.0
-      i_clamp_min: -1.0
-      i_clamp_max: 1.0
-
-    command_timeout: 0.1 
-    limits:
-      lower: -0.381
-      upper: 1.3716    
-
-
 
 diff_drive_controller:
   ros__parameters:
@@ -119,4 +107,4 @@ diff_drive_controller:
     angular.z.max_acceleration: 4.0
     angular.z.min_acceleration: -4.0
     angular.z.max_jerk: 0.0
-    angular.z.min_jerk: 0.0    
+    angular.z.min_jerk: 0.0        

@@ -1,0 +1,2 @@
+source;share/agbot_full_moveit_setup/environment/ament_prefix_path.sh
+source;share/agbot_full_moveit_setup/environment/path.sh

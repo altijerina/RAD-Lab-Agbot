@@ -1,0 +1,53 @@
+[0.462s] Invoking command in '/home/albert/rad_ws/build/agbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/rad_ws/src/agbot_navigation -DCMAKE_INSTALL_PREFIX=/home/albert/rad_ws/install/agbot_navigation
+[0.968s] -- The C compiler identification is GNU 11.4.0
+[1.474s] -- The CXX compiler identification is GNU 11.4.0
+[1.583s] -- Detecting C compiler ABI info
+[2.162s] -- Detecting C compiler ABI info - done
+[2.323s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.324s] -- Detecting C compile features
+[2.327s] -- Detecting C compile features - done
+[2.343s] -- Detecting CXX compiler ABI info
+[2.933s] -- Detecting CXX compiler ABI info - done
+[3.083s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.089s] -- Detecting CXX compile features
+[3.096s] -- Detecting CXX compile features - done
+[3.175s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.374s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[5.725s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.244s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.256s] -- Added test 'lint_cmake' to check CMake code style
+[6.267s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.276s] -- Added test 'xmllint' to check XML markup files
+[6.298s] -- Configuring done (5.8s)
+[6.302s] -- Generating done (0.0s)
+[6.305s] -- Build files have been written to: /home/albert/rad_ws/build/agbot_navigation
+[6.314s] Invoked command in '/home/albert/rad_ws/build/agbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake /home/albert/rad_ws/src/agbot_navigation -DCMAKE_INSTALL_PREFIX=/home/albert/rad_ws/install/agbot_navigation
+[6.318s] Invoking command in '/home/albert/rad_ws/build/agbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/rad_ws/build/agbot_navigation -- -j8 -l8
+[6.468s] Invoked command in '/home/albert/rad_ws/build/agbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/rad_ws/build/agbot_navigation -- -j8 -l8
+[6.595s] Invoking command in '/home/albert/rad_ws/build/agbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/rad_ws/build/agbot_navigation
+[6.607s] -- Install configuration: ""
+[6.607s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/launch
+[6.608s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/launch/agbot_nav2.launch.py
+[6.608s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/map
+[6.608s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/map/home.pgm
+[6.608s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/map/home.yaml
+[6.608s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/param
+[6.609s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/param/agbot_nav.yaml
+[6.609s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/rviz
+[6.609s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/rviz/agbot_config.rviz
+[6.612s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/ament_index/resource_index/package_run_dependencies/agbot_navigation
+[6.612s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/ament_index/resource_index/parent_prefix_path/agbot_navigation
+[6.615s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/environment/ament_prefix_path.sh
+[6.615s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/environment/ament_prefix_path.dsv
+[6.615s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/environment/path.sh
+[6.616s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/environment/path.dsv
+[6.616s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/local_setup.bash
+[6.616s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/local_setup.sh
+[6.616s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/local_setup.zsh
+[6.616s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/local_setup.dsv
+[6.616s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/package.dsv
+[6.617s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/ament_index/resource_index/packages/agbot_navigation
+[6.617s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/cmake/agbot_navigationConfig.cmake
+[6.617s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/cmake/agbot_navigationConfig-version.cmake
+[6.617s] -- Installing: /home/albert/rad_ws/install/agbot_navigation/share/agbot_navigation/package.xml
+[6.626s] Invoked command in '/home/albert/rad_ws/build/agbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/rad_ws/install/agbot_teleop:/home/albert/rad_ws/install/agbot_py:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --install /home/albert/rad_ws/build/agbot_navigation
