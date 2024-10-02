@@ -1,6 +1,0 @@
-{
-  "package_name": "agbot_msgs",
-  "non_idl_tuples": [
-    "/home/albert/rad_ws/src/agbot_msgs:action/AgbotArmTask.action"
-  ]
-}

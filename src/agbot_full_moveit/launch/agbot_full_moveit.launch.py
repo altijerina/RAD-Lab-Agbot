@@ -1,19 +1,20 @@
 import os
 from launch import LaunchDescription
+from moveit_configs_utils import MoveItConfigsBuilder
+from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
-from moveit_configs_utils import MoveItConfigsBuilder
 from ament_index_python.packages import get_package_share_directory
-from launch_ros.actions import Node
 
 
 def generate_launch_description():
+
+    is_sim = LaunchConfiguration('is_sim')
+    
     is_sim_arg = DeclareLaunchArgument(
         'is_sim',
         default_value='True'
     )
-      
-    is_sim = LaunchConfiguration('is_sim')      
 
     moveit_config = (
         MoveItConfigsBuilder("agbot_full", package_name="agbot_full_moveit")
@@ -24,10 +25,12 @@ def generate_launch_description():
             )
         )
         .robot_description_semantic(file_path="config/agbot_full.srdf")
+        .robot_description_kinematics(file_path="config/kinematics.yaml")
+        .joint_limits(file_path="config/joint_limits.yaml")
         .trajectory_execution(file_path="config/moveit_controllers.yaml")
         .to_moveit_configs()
     )
-    
+
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
@@ -42,19 +45,20 @@ def generate_launch_description():
     rviz_config = os.path.join(
         get_package_share_directory("agbot_full_moveit"),
             "config",
-            "agbot_full_config.rviz"
+            "moveit.rviz"
     )
     rviz_node = Node(
         package="rviz2",
         executable="rviz2",
         name="rviz2",
-        output="screen",
+        output="log",
         arguments=["-d", rviz_config],
         parameters=[
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
             moveit_config.robot_description_kinematics,
             moveit_config.joint_limits,
+            {'use_sim_time': is_sim}
         ],
     )
 

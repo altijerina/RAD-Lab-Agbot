@@ -116,35 +116,41 @@
     <!-- Robot Body -->
     <gazebo reference="base_link">
         <material>Gazebo/White</material>
-     </gazebo>     
-     
-     <gazebo reference="left_wheel_link">
-        <material>Gazebo/Black</material>
-        <mu1 value="0.8"/>
-        <mu2 value="0.8"/>        
-     </gazebo>      
-     
-     <gazebo reference="right_wheel_link">
-        <material>Gazebo/Black</material>
-        <mu1 value="0.8"/>
-        <mu2 value="0.8"/>
-     </gazebo>   
-     
-     <gazebo reference="caster_wheel_link">
-        <material>Gazebo/Yellow</material>
-        <mu1 value="0.0001"/>
-        <mu2 value="0.0001"/>
-     </gazebo>    
-     
-     <gazebo reference="rgb_camera">
-        <material>Gazebo/DarkGrey</material>
-     </gazebo>     
-     
-     <gazebo reference="mast_link">
-        <material>Gazebo/Purple</material>   
-     </gazebo>       
+    </gazebo>     
+    
+    <gazebo reference="left_wheel_link">
+      <material>Gazebo/Black</material>
+      <mu1 value="0.8"/>
+      <mu2 value="0.8"/>        
+    </gazebo>      
+    
+    <gazebo reference="right_wheel_link">
+      <material>Gazebo/Black</material>
+      <mu1 value="0.8"/>
+      <mu2 value="0.8"/>
+    </gazebo>   
+    
+    <gazebo reference="caster_wheel_link">
+      <material>Gazebo/Yellow</material>
+      <mu1 value="0.0001"/>
+      <mu2 value="0.0001"/>
+    </gazebo>    
+    
+    <gazebo reference="rgb_camera">
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>     
+    
+    <gazebo reference="mast_link">
+      <material>Gazebo/Purple</material>   
+    </gazebo>       
     
     <!-- Robot Arm -->
+    <gazebo reference = "roboball_cylinder_link">
+      <material>Gazebo/GreyTransparent</material>
+      <mu1>30.0</mu1>
+      <mu2>30.0</mu2>
+    </gazebo>
+
     <gazebo reference="arm_base_rail_link">
         <material>Gazebo/White</material>
     </gazebo>  
@@ -171,40 +177,40 @@
         <minDepth>0.001</minDepth>        
     </gazebo>     
 
-     <gazebo reference="arm_base_link">
-        <material>Gazebo/Blue</material>     
-      </gazebo>
-        
-      <gazebo reference="base_plate">
-        <material>Gazebo/Red</material>         
-      </gazebo>
-        
-      <gazebo reference="forward_drive_arm">
-        <material>Gazebo/Yellow</material>
-      </gazebo> 
-    
-      <gazebo reference="elbow">
-        <material>Gazebo/White</material>
-      </gazebo>   
-        
-      <gazebo reference="horizontal_arm">
-        <material>Gazebo/Green</material>
-      </gazebo> 
-        
-      <gazebo reference="claw_support">
-        <material>Gazebo/Yellow</material>
-      </gazebo> 
-    
-      <gazebo reference="gripper_right">
-        <material>Gazebo/Purple</material>
-      </gazebo> 
-    
-      <gazebo reference="gripper_left">
-        <material>Gazebo/Purple</material>
-      </gazebo> 
+    <gazebo reference="arm_base_link">
+      <material>Gazebo/Blue</material>     
+    </gazebo>
       
-      <gazebo reference="arm_rgb_camera">
-        <material>Gazebo/Blue</material>
-      </gazebo>    
+    <gazebo reference="base_plate_link">
+      <material>Gazebo/Red</material>         
+    </gazebo>
+      
+    <gazebo reference="forward_drive_arm_link">
+      <material>Gazebo/Yellow</material>
+    </gazebo> 
+  
+    <gazebo reference="elbow_link">
+      <material>Gazebo/White</material>
+    </gazebo>   
+      
+    <gazebo reference="horizontal_arm_link">
+      <material>Gazebo/Green</material>
+    </gazebo> 
+      
+    <gazebo reference="claw_support_link">
+      <material>Gazebo/Yellow</material>
+    </gazebo> 
+  
+    <gazebo reference="gripper_right_link">
+      <material>Gazebo/Purple</material>
+    </gazebo> 
+  
+    <gazebo reference="gripper_left_link">
+      <material>Gazebo/Purple</material>
+    </gazebo> 
+    
+    <gazebo reference="arm_rgb_camera_link">
+      <material>Gazebo/Blue</material>
+    </gazebo>  
 
 </robot>

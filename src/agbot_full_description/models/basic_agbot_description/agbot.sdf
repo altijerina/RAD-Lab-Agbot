@@ -1,23 +1,23 @@
 <sdf version='1.7'>
-  <model name='agbot'>
+  <model name='agbot_full'>
     <link name='base_footprint'>
       <inertial>
-        <pose>0.004651 0 0.082204 0 -0 0</pose>
-        <mass>10.206</mass>
+        <pose>0.011492 0 0.630675 0 -0 0</pose>
+        <mass>21.706</mass>
         <inertia>
-          <ixx>1.11088</ixx>
-          <ixy>0</ixy>
-          <ixz>0.00188574</ixz>
-          <iyy>1.1654</iyy>
-          <iyz>0</iyz>
-          <izz>1.07129</izz>
+          <ixx>8.84262</ixx>
+          <ixy>7.92366e-17</ixy>
+          <ixz>0.1136</ixz>
+          <iyy>12.482</iyy>
+          <iyz>-7.58535e-14</iyz>
+          <izz>8.05757</izz>
         </inertia>
       </inertial>
       <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
-        <pose>0 0 0.083 0 -0 0</pose>
+        <pose>0 0 0.543 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.385 0.275 0.11</size>
+            <size>2.01168 2.01168 0.8382</size>
           </box>
         </geometry>
         <surface>
@@ -30,10 +30,10 @@
         </surface>
       </collision>
       <collision name='base_footprint_fixed_joint_lump__caster_wheel_link_collision_1'>
-        <pose>0.116667 0 0.041 0 -0 0</pose>
+        <pose>0.6096 0 0.162 0 -0 0</pose>
         <geometry>
           <sphere>
-            <radius>0.035</radius>
+            <radius>0.162</radius>
           </sphere>
         </geometry>
         <surface>
@@ -49,10 +49,10 @@
         </surface>
       </collision>
       <collision name='base_footprint_fixed_joint_lump__mast_link_collision_2'>
-        <pose>0.125 0 0.133 0 -0 0</pose>
+        <pose>0.9394 0 0.7335 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.05 0.05 0.01</size>
+            <size>0.05 0.05 0.03</size>
           </box>
         </geometry>
         <surface>
@@ -65,11 +65,11 @@
         </surface>
       </collision>
       <collision name='base_footprint_fixed_joint_lump__rgb_camera_collision_3'>
-        <pose>0.375 0 0.113 0 -0 0</pose>
+        <pose>1.1144 0 0.8478 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.0025 0.0025 0.0025</scale>
-            <uri>file:///home/albert/rad_ws/install/agbot_description/share/agbot_description/meshes/pi_camera.STL</uri>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/pi_camera.STL</uri>
           </mesh>
         </geometry>
         <surface>
@@ -81,11 +81,36 @@
           </friction>
         </surface>
       </collision>
-      <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
-        <pose>0 0 0.083 0 -0 0</pose>
+      <collision name='base_footprint_fixed_joint_lump__roboball_cylinder_link_collision_4'>
+        <pose>0 0 1.1272 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>1.8288</length>
+            <radius>0.2032</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__arm_base_rail_link_collision_5'>
+        <pose>0 0 0.9875 -0 -0 1.5708</pose>
         <geometry>
           <box>
-            <size>0.35 0.25 0.1</size>
+            <size>1.524 0.1524 0.0127</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
+        <pose>0 0 0.543 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.8288 1.8288 0.762</size>
           </box>
         </geometry>
         <material>
@@ -96,10 +121,10 @@
         </material>
       </visual>
       <visual name='base_footprint_fixed_joint_lump__caster_wheel_link_visual_1'>
-        <pose>0.116667 0 0.041 0 -0 0</pose>
+        <pose>0.6096 0 0.162 0 -0 0</pose>
         <geometry>
           <sphere>
-            <radius>0.035</radius>
+            <radius>0.162</radius>
           </sphere>
         </geometry>
         <material>
@@ -110,10 +135,10 @@
         </material>
       </visual>
       <visual name='base_footprint_fixed_joint_lump__mast_link_visual_2'>
-        <pose>0.125 0 0.138 0 -0 0</pose>
+        <pose>0.9394 0 0.7485 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.05 0.05 0.01</size>
+            <size>0.05 0.05 0.03</size>
           </box>
         </geometry>
         <material>
@@ -124,16 +149,39 @@
         </material>
       </visual>
       <visual name='base_footprint_fixed_joint_lump__rgb_camera_visual_3'>
-        <pose>0.175 -0.035 0.148 0 1.5708 0</pose>
+        <pose>0.9144 -0.035 0.8828 0 1.5708 0</pose>
         <geometry>
           <mesh>
             <scale>0.0025 0.0025 0.0025</scale>
-            <uri>file:///home/albert/rad_ws/install/agbot_description/share/agbot_description/meshes/pi_camera.STL</uri>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/pi_camera.STL</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Green</name>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__roboball_cylinder_link_visual_4'>
+        <pose>0 0 1.1272 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>1.8288</length>
+            <radius>0.2032</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__arm_base_rail_link_visual_5'>
+        <pose>0 0 0.9875 -0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>1.524 0.1524 0.0127</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -162,19 +210,31 @@
           <output_type>sensor_msgs/LaserScan</output_type>
           <frame_name>laser_frame</frame_name>
         </plugin>
-        <pose>0.125 0 0.163 0 -0 0</pose>
+        <pose>0.9394 0 0.7335 0 -0 0</pose>
       </sensor>
       <sensor name='camera_sensor' type='camera'>
         <visualize>1</visualize>
         <update_rate>60</update_rate>
-        <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
-          <frame_name>rgb_camera_optical</frame_name>
+        <camera>
+          <horizontal_fov>1.089</horizontal_fov>
+          <image>
+            <format>R8G8B8</format>
+            <width>1024</width>
+            <height>768</height>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>8</far>
+          </clip>
+        </camera>
+        <plugin name='camera_controller_base' filename='libgazebo_ros_camera.so'>
+          <frame_name>rgb_camera_optical_b</frame_name>
         </plugin>
-        <pose>0.175 0 0.113 0 -0 0</pose>
+        <pose>0.9144 0 0.8478 0 -0 0</pose>
       </sensor>
     </link>
     <joint name='base_left_wheel_joint' type='revolute'>
-      <pose relative_to='base_footprint'>-0.0875 0.15 0.068 0 -0 0</pose>
+      <pose relative_to='base_footprint'>-0.4572 0.9394 0.324 0 -0 0</pose>
       <parent>base_footprint</parent>
       <child>left_wheel_link</child>
       <axis>
@@ -195,20 +255,20 @@
         <pose>0 0 0 1.5708 -1.5708 0</pose>
         <mass>1</mass>
         <inertia>
-          <ixx>0.000480583</ixx>
+          <ixx>0.00676933</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.000480583</iyy>
+          <iyy>0.00676933</iyy>
           <iyz>0</iyz>
-          <izz>0.0005445</izz>
+          <izz>0.013122</izz>
         </inertia>
       </inertial>
       <collision name='left_wheel_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.002 0.002 0.002</scale>
-            <uri>file:///home/albert/rad_ws/install/agbot_description/share/agbot_description/meshes/left_tire.stl</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/left_tire.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -216,7 +276,10 @@
             <ode/>
           </contact>
           <friction>
-            <ode/>
+            <ode>
+              <mu>0.8</mu>
+              <mu2>0.8</mu2>
+            </ode>
           </friction>
         </surface>
       </collision>
@@ -224,8 +287,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.002 0.002 0.002</scale>
-            <uri>file:///home/albert/rad_ws/install/agbot_description/share/agbot_description/meshes/left_tire.stl</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/left_tire.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -237,7 +300,7 @@
       </visual>
     </link>
     <joint name='base_right_wheel_joint' type='revolute'>
-      <pose relative_to='base_footprint'>-0.0875 -0.15 0.068 0 -0 0</pose>
+      <pose relative_to='base_footprint'>-0.4572 -0.9394 0.324 0 -0 0</pose>
       <parent>base_footprint</parent>
       <child>right_wheel_link</child>
       <axis>
@@ -258,20 +321,183 @@
         <pose>0 0 0 1.5708 -1.5708 0</pose>
         <mass>1</mass>
         <inertia>
-          <ixx>0.000480583</ixx>
+          <ixx>0.00676933</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.000480583</iyy>
+          <iyy>0.00676933</iyy>
           <iyz>0</iyz>
-          <izz>0.0005445</izz>
+          <izz>0.013122</izz>
         </inertia>
       </inertial>
       <collision name='right_wheel_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.002 0.002 0.002</scale>
-            <uri>file:///home/albert/rad_ws/install/agbot_description/share/agbot_description/meshes/right_tire.stl</uri>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/right_tire.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.8</mu>
+              <mu2>0.8</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='right_wheel_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/right_tire.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='base_rail_to_ mid_rail_joint' type='prismatic'>
+      <pose relative_to='base_footprint'>-0 0 1.0002 -0 -0 1.5708</pose>
+      <parent>base_footprint</parent>
+      <child>arm_mid_rail_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.5715</upper>
+          <effort>100</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='arm_mid_rail_link'>
+      <pose relative_to='base_rail_to_ mid_rail_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0.00635 0 -0 0</pose>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.0967807</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0977417</iyy>
+          <iyz>0</iyz>
+          <izz>0.00097446</izz>
+        </inertia>
+      </inertial>
+      <collision name='arm_mid_rail_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.524 0.1524 0.0127</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+06</kp>
+              <kd>100</kd>
+              <max_vel>0.5</max_vel>
+              <min_depth>0.001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>30</mu>
+              <mu2>30</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='arm_mid_rail_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.524 0.1524 0.0127</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='mid_rail_to_arm_car_joint' type='prismatic'>
+      <pose relative_to='arm_mid_rail_link'>0 0 0.0127 0 -0 0</pose>
+      <parent>arm_mid_rail_link</parent>
+      <child>arm_base_car_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.143</upper>
+          <effort>100</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='arm_base_car_link'>
+      <pose relative_to='mid_rail_to_arm_car_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.263043 0 0.024572 0 -0 0</pose>
+        <mass>2.3</mass>
+        <inertia>
+          <ixx>1.10325</ixx>
+          <ixy>0</ixy>
+          <ixz>0.0102609</ixz>
+          <iyy>1.54788</iyy>
+          <iyz>0</iyz>
+          <izz>1.44542</izz>
+        </inertia>
+      </inertial>
+      <collision name='arm_base_car_link_collision'>
+        <pose>0 0 0.00635 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.524 0.1524 0.0127</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+06</kp>
+              <kd>100</kd>
+              <max_vel>0.5</max_vel>
+              <min_depth>0.001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>30</mu>
+              <mu2>30</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='arm_base_car_link_fixed_joint_lump__arm_base_link_collision_1'>
+        <pose>0.7608 -0.075 0.0127 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0015 0.0015 0.002</scale>
+            <uri>file:///home/albert/bcdc_ws/install/agbot_description/share/agbot_description/meshes/basement.STL</uri>
           </mesh>
         </geometry>
         <surface>
@@ -283,28 +509,462 @@
           </friction>
         </surface>
       </collision>
-      <visual name='right_wheel_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+      <collision name='arm_base_car_link_fixed_joint_lump__box_four_link_collision_2'>
+        <pose>0.42 0 0.0508 0 -0 0</pose>
         <geometry>
-          <mesh>
-            <scale>0.002 0.002 0.002</scale>
-            <uri>file:///home/albert/rad_ws/install/agbot_description/share/agbot_description/meshes/right_tire.stl</uri>
-          </mesh>
+          <box>
+            <size>0.308 0.16764 0.08382</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='arm_base_car_link_fixed_joint_lump__box_one_link_collision_3'>
+        <pose>-0.622 0 0.0508 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.308 0.16764 0.08382</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='arm_base_car_link_fixed_joint_lump__box_three_link_collision_4'>
+        <pose>0.09 0 0.0508 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.308 0.16764 0.08382</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='arm_base_car_link_fixed_joint_lump__box_two_link_collision_5'>
+        <pose>-0.292 0 0.0508 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.308 0.16764 0.08382</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='arm_base_car_link_visual'>
+        <pose>0 0 0.00635 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.524 0.1524 0.0127</size>
+          </box>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Black</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
+      <visual name='arm_base_car_link_fixed_joint_lump__arm_base_link_visual_1'>
+        <pose>0.7608 -0.077 0.0127 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0015 0.0015 0.002</scale>
+            <uri>file:///home/albert/bcdc_ws/install/agbot_description/share/agbot_description/meshes/basement.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='arm_base_car_link_fixed_joint_lump__box_four_link_visual_2'>
+        <pose>0.42 0 0.0508 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.28 0.1524 0.0762</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='arm_base_car_link_fixed_joint_lump__box_one_link_visual_3'>
+        <pose>-0.622 0 0.0508 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.28 0.1524 0.0762</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='arm_base_car_link_fixed_joint_lump__box_three_link_visual_4'>
+        <pose>0.09 0 0.0508 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.28 0.1524 0.0762</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='arm_base_car_link_fixed_joint_lump__box_two_link_visual_5'>
+        <pose>-0.292 0 0.0508 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.28 0.1524 0.0762</size>
+          </box>
+        </geometry>
+      </visual>
     </link>
-    <static>0</static>
+    <joint name='arm_base_joint' type='revolute'>
+      <pose relative_to='arm_base_car_link'>0.6858 0 0.0827 0 -0 1.5708</pose>
+      <parent>arm_base_car_link</parent>
+      <child>base_plate_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>30</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='base_plate_link'>
+      <pose relative_to='arm_base_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_plate_link_collision'>
+        <pose>-0.076 -0.0798 -0.121 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0015 0.0015 0.002</scale>
+            <uri>file:///home/albert/bcdc_ws/install/agbot_description/share/agbot_description/meshes/base_plate.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_plate_link_visual'>
+        <pose>-0.059 -0.06 -0.121 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0015 0.0015 0.002</scale>
+            <uri>file:///home/albert/bcdc_ws/install/agbot_description/share/agbot_description/meshes/base_plate.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='shoulder_joint' type='revolute'>
+      <pose relative_to='base_plate_link'>0 0 0.075 -1.5708 0 0</pose>
+      <parent>base_plate_link</parent>
+      <child>forward_drive_arm_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>4</upper>
+          <effort>30</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='forward_drive_arm_link'>
+      <pose relative_to='shoulder_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.017778 0 0.25 0 -0 0</pose>
+        <mass>0.15</mass>
+        <inertia>
+          <ixx>1.01889</ixx>
+          <ixy>0</ixy>
+          <ixz>-0.00133333</ixz>
+          <iyy>1.01898</iyy>
+          <iyz>0</iyz>
+          <izz>1.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='forward_drive_arm_link_collision'>
+        <pose>0.01 -0.006 0.38 -1.5708 1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.75 0.05 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='forward_drive_arm_link_fixed_joint_lump__elbow_link_collision_1'>
+        <pose>0.053333 0 0.75 0 1.5708 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.18</length>
+            <radius>0.015</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='forward_drive_arm_link_visual'>
+        <pose>-0.005 -0.006 0.38 -1.5708 1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.75 0.05 0.005</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='forward_drive_arm_link_fixed_joint_lump__elbow_link_visual_1'>
+        <pose>0.053333 0 0.75 0 1.5708 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.18</length>
+            <radius>0.015</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='elbow_joint' type='revolute'>
+      <pose relative_to='forward_drive_arm_link'>0.098333 0 0.75 3.14159 -0 0</pose>
+      <parent>forward_drive_arm_link</parent>
+      <child>horizontal_arm_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>0</upper>
+          <effort>30</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='horizontal_arm_link'>
+      <pose relative_to='elbow_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0.185 0 -0 0</pose>
+        <mass>0.15</mass>
+        <inertia>
+          <ixx>1.01041</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.01041</iyy>
+          <iyz>0</iyz>
+          <izz>1.00001</izz>
+        </inertia>
+      </inertial>
+      <collision name='horizontal_arm_link_collision'>
+        <pose>0 0 0.275 -1.5708 1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.555 0.05 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='horizontal_arm_link_fixed_joint_lump__wrist_link_collision_1'>
+        <pose>0 0 0.555 0 1.5708 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.18</length>
+            <radius>0.015</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='horizontal_arm_link_visual'>
+        <pose>0 0 0.275 -1.5708 1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.555 0.05 0.005</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='horizontal_arm_link_fixed_joint_lump__wrist_link_visual_1'>
+        <pose>0 0 0.555 0 1.5708 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.09</length>
+            <radius>0.015</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='wrist_joint' type='revolute'>
+      <pose relative_to='horizontal_arm_link'>0 0 0.555 0 -0 0</pose>
+      <parent>horizontal_arm_link</parent>
+      <child>claw_support_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>30</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='claw_support_link'>
+      <pose relative_to='wrist_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0.001961 0.002255 0 -0 0</pose>
+        <mass>0.051</mass>
+        <inertia>
+          <ixx>2.00002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.00001</iyy>
+          <iyz>-1.12745e-05</iyz>
+          <izz>2.00001</izz>
+        </inertia>
+      </inertial>
+      <collision name='claw_support_link_collision'>
+        <pose>-0.048649 0 0 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.004 0.004 0.004</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/claw_support.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='claw_support_link_fixed_joint_lump__arm_rgb_camera_link_collision_1'>
+        <pose>-0.025 0.072 0.085 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.002 0.002 0.002</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/pi_camera.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='claw_support_link_visual'>
+        <pose>-0.048649 0 0 -1.5708 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.004 0.004 0.004</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/claw_support.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='claw_support_link_fixed_joint_lump__arm_rgb_camera_link_visual_1'>
+        <pose>-0.025 0.072 0.085 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.002 0.002 0.002</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/pi_camera.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='gripper_left_joint' type='revolute'>
+      <pose relative_to='claw_support_link'>0.042 -0.015 0.083 0 -0 0</pose>
+      <parent>claw_support_link</parent>
+      <child>gripper_left_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>30</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='gripper_left_link'>
+      <pose relative_to='gripper_left_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='gripper_left_link_collision'>
+        <pose>0.0147 0 0.19 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.004 0.004 0.004</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/left_finger.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='gripper_left_link_visual'>
+        <pose>0.0147 0 0.19 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.004 0.004 0.004</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/left_finger.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='gripper_right_joint' type='revolute'>
+      <pose relative_to='claw_support_link'>-0.037 -0.015 0.083 0 -0 0</pose>
+      <parent>claw_support_link</parent>
+      <child>gripper_right_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>0</upper>
+          <effort>30</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='gripper_right_link'>
+      <pose relative_to='gripper_right_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='gripper_right_link_collision'>
+        <pose>0.041 0 0.19 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.004 0.004 0.004</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/right_finger.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='gripper_right_link_visual'>
+        <pose>0.041 0 0.19 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.004 0.004 0.004</scale>
+            <uri>file:///home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description/meshes/right_finger.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
     <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
       <robot_param>robot_description</robot_param>
       <robot_param_node>robot_state_publisher</robot_param_node>
-      <parameters>/home/albert/rad_ws/install/agbot_controller/share/agbot_controller/config/agbot_controllers.yaml</parameters>
-      <update_rate>50</update_rate>
+      <parameters>/home/albert/rad_ws/install/agbot_full_controller/share/agbot_full_controller/config/agbot_full_controllers.yaml</parameters>
+      <controller_manager_prefix_node_name>controller_manager</controller_manager_prefix_node_name>
+      <update_rate>100</update_rate>
       <left_joint>base_left_wheel_joint</left_joint>
       <right_joint>base_right_wheel_joint</right_joint>
       <wheel_separation>0.179</wheel_separation>
@@ -317,6 +977,13 @@
       <odometry_topic>odom</odometry_topic>
       <odometry_frame>odom</odometry_frame>
       <robot_base_frame>base_footprint</robot_base_frame>
+    </plugin>
+    <static>0</static>
+    <plugin name='gazebo_ros2_control' filename='libgazebo_ros2_control.so'>
+      <robot_param>robot_description</robot_param>
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <parameters>/home/albert/rad_ws/install/agbot_full_controller/share/agbot_full_controller/config/agbot_full_controllers.yaml</parameters>
+      <controller_manager_prefix_node_name>controller_manager</controller_manager_prefix_node_name>
     </plugin>
   </model>
 </sdf>

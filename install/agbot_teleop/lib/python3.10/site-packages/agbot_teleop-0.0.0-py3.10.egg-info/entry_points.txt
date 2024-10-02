@@ -1,3 +1,0 @@
-[console_scripts]
-agbot_teleop_key = agbot_teleop.agbot_teleop_key:main
-

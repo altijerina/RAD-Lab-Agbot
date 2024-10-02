@@ -1,7 +1,0 @@
-<launch>
-    <arg name="model" default="agbot_description)" doc="model type agbot"/>
-    <param name="model" value="agbot"/>
-  
-    <node pkg="agbot_teleop" type="agbot_teleop_key" name="agbot_teleop_key"  output="screen">
-    </node>
-  </launch>
