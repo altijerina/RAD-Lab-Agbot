@@ -27,7 +27,7 @@
     <xacro:property name="wheel_length" value="0.05" />
     <xacro:property name="mast_length" value="0.05" />
     <xacro:property name="mast_width" value="0.05" />
-    <xacro:property name="mast_height" value="0.03" />
+    <xacro:property name="mast_height" value="0.15" />
     <xacro:property name="caster_radius" value="0.162" />
 
     <xacro:property name = "forward_drive_arm_length" value = "0.75" />
@@ -38,9 +38,12 @@
     <xacro:property name = "horizontal_arm_height" value = "0.005" /> 
     <xacro:property name = "cylinder_radius" value = "0.015" />
     <xacro:property name = "cylinder_length" value = "0.18" />  
-    <xacro:property name = "robo_cylinder_radius" value = "0.2032" />
-    <xacro:property name = "robo_cylinder_length" value = "1.8288" />          
 
+    <xacro:property name = "laser_radius" value = "0.025" />
+    <xacro:property name = "laser_length" value = "0.10" /> 
+
+    <xacro:property name = "robo_cylinder_radius" value = "0.2032" />
+    <xacro:property name = "robo_cylinder_length" value = "1.8288" />        
     <xacro:property name = "arm_base_rail_length" value = "1.524" />
     <xacro:property name = "arm_base_rail_width" value = "0.1524" />
     <xacro:property name = "arm_base_rail_height" value = "0.0127" />
@@ -76,17 +79,20 @@
 
     <xacro:macro name="prismatic_transmission" params="name">
         <transmission name="${name}_prismatic_transmission">
-            <type>transmission_interface/SimpleTransmission</type>
+            <!-- <type>transmission_interface/SimpleTransmission</type> -->
+            <type>"velocity_controllers/JointPositionController"</type>
             <!-- <plugin>hardware_interface/VelocityJointInterface</plugin> -->
             <joint name="${name}">
-                <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+                <!-- <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> -->
             </joint>  
             <actuator name="${name}_motor">
-                <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-                <mechanicalReduction>1</mechanicalReduction>
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+                <!-- <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> -->
+                <mechanicalReduction>1.0</mechanicalReduction>
             </actuator>            
         </transmission>  
-    </xacro:macro>      
+    </xacro:macro>     
 
     <!-- Robot Body -->
     <link name = "base_footprint">
@@ -125,7 +131,7 @@
             </geometry>
             <origin xyz = "0 0 0" rpy = "0 0 0" />           
         </collision>
-        <xacro:wheel_inertia m="1.0" r = "${wheel_radius}" h = "${wheel_length}"
+        <xacro:wheel_inertia m="3.0" r = "${wheel_radius}" h = "${wheel_length}"
                              xyz = "0 0 0" rpy = "${Pi/2.0} -${Pi/2.0} 0" />
     </link>   
 
@@ -143,7 +149,7 @@
             </geometry>
             <origin xyz = "0 0 0" rpy = "0 0 0" />           
         </collision>
-        <xacro:wheel_inertia m="1.0" r = "${wheel_radius}" h = "${wheel_length}"
+        <xacro:wheel_inertia m="3.0" r = "${wheel_radius}" h = "${wheel_length}"
                              xyz = "0 0 0" rpy = "${Pi/2.0} -${Pi/2.0} 0" />
     </link>      
 
@@ -161,15 +167,15 @@
             </geometry>
             <origin xyx = "${base_length / 3} 0 ${caster_radius}" rpy = "0 0 0" />
         </collision>
-        <xacro:sphere_inertia m = "0.2" r = "${caster_radius}"
+        <xacro:sphere_inertia m = "2.0" r = "${caster_radius}"
                             xyz = "${base_length / 3} 0 0" rpy = "0 0 0" />
     </link> 
         
 
-    <link name="rgb_camera_optical" >
+    <link name="rgb_camera_optical_link" >
     </link> 
 
-    <link name="rgb_camera">
+    <link name="rgb_camera_link">
         <xacro:default_inertia mass="0.001"/>
         <visual>
             <origin xyz="0 -0.035 0.035" rpy="0 ${Pi/2} 0"/>
@@ -204,8 +210,26 @@
                             xyz = "0 0 0" rpy="0 0 0" />
     </link>      
     
-    <link name="laser_frame">       
+    <link name="laser_frame_link">       
     </link>    
+
+    <link name="laser_link">
+        <visual>
+            <geometry>
+                <cylinder length="${laser_length}" radius="${laser_radius}" />
+            </geometry>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+            <material name="red"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length="${laser_length}" radius="${laser_radius}" />
+            </geometry>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+        </collision>
+        <xacro:cylinder_inertia m="0.1" r="${laser_radius}" h="${laser_length}"
+                                 xyz="0 0 0" rpy="0 0 0"/>
+    </link>   
 
     <!-- Robot Arm -->
      <link name = "roboball_cylinder_link">
@@ -491,14 +515,14 @@
     <joint name="base_right_wheel_joint" type="continuous">
         <parent link="base_link" />
         <child link="right_wheel_link" />
-        <origin xyz="-${base_length / 4.0} -${(base_width + wheel_length) / 2.0} ${wheel_radius}" rpy="0 0 0" />
+        <origin xyz="-${base_length / 4.0} -${(base_width + (5*wheel_length)) / 2.0} ${wheel_radius}" rpy="0 0 0" />
         <axis xyz="0 1 0" />
     </joint>
 
     <joint name="base_left_wheel_joint" type="continuous">
         <parent link="base_link" />
         <child link="left_wheel_link" />
-        <origin xyz="-${base_length / 4.0} ${(base_width + wheel_length) / 2.0} ${wheel_radius}" rpy="0 0 0" />
+        <origin xyz="-${base_length / 4.0} ${(base_width + (5*wheel_length)) / 2.0} ${wheel_radius}" rpy="0 0 0" />
         <axis xyz="0 1 0" />
     </joint> 
 
@@ -510,71 +534,77 @@
 
     <joint name="camera_optical_joint" type="fixed">
         <parent link="base_link"/>
-        <child link="rgb_camera_optical"/>
+        <child link="rgb_camera_optical_link"/>
         <origin xyz = "${base_length/2} 0 ${base_height-(base_height/10)}" rpy = "0 0 0" />
     </joint> 
 
     <joint name = "rgb_camera_joint" type = "fixed" >        
-        <parent link = "rgb_camera_optical" />
-        <child link = "rgb_camera" />
+        <parent link = "rgb_camera_optical_link" />
+        <child link = "rgb_camera_link" />
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>    
     
     <joint name = "base_mast_joint" type = "fixed">
         <parent link = "base_link" />
         <child link = "mast_link" />
-        <origin xyz="${((base_length / 2) + (mast_length / 2))} 0 ${3 * base_height / 4}" rpy="0 0 0"/>
+        <origin xyz="${((base_length / 2) - mast_length)} 0 ${base_height}" rpy="0 0 0"/>
     </joint>
 
-    <joint name="laser_joint" type="fixed">
+    <joint name="laser_frame_joint" type="fixed">
         <parent link="mast_link"/>
-        <child link="laser_frame"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <child link="laser_frame_link"/>
+        <origin xyz="0 0 ${mast_height}" rpy="0 0 0"/>
     </joint>   
+
+    <joint name="laser_joint" type="fixed">
+        <parent link="laser_frame_link"/>
+        <child link="laser_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>     
 
     <!-- Transition Joint  -->
     <joint name = "robo_cylinder_joint" type = "fixed">
         <parent link = "base_link"/>
         <child link="roboball_cylinder_link" />
         <origin xyz = "0 0 ${base_height + robo_cylinder_radius}" rpy = "${PI/2} 0 0" />
-     </joint>  
+    </joint>  
+
+    <joint name = "body_arm_joint" type = "fixed">
+    <parent link="roboball_cylinder_link" />
+    <child link="arm_base_rail_link" />
+    <origin xyz = "0 -${robo_cylinder_radius - (5*arm_base_rail_height)} 0" rpy = "0 ${PI/2} ${PI/2}" />
+    </joint>    
     
-     <joint name = "body_arm_joint" type = "fixed">
-        <parent link="roboball_cylinder_link" />
-        <child link="arm_base_rail_link" />
-        <origin xyz = "0 -${robo_cylinder_radius - (5*arm_base_rail_height)} 0" rpy = "0 ${PI/2} ${PI/2}" />
-     </joint>    
-     
-     <joint name = "base_rail_to_ mid_rail_joint" type = "prismatic">
-        <parent link = "arm_base_rail_link"/>
-        <child link="arm_mid_rail_link" />
-        <origin xyz = "0 0 ${arm_base_rail_height}" rpy = "0 0 0" />
-        <limit lower="0" upper="${((arm_base_rail_length / 2) + (arm_base_rail_length / 4))/2}" effort="100.0" velocity="0.5"/>
-     </joint>       
-     
-     <joint name = "box_one_joint" type = "fixed">
-        <parent link = "arm_base_car_link"/>
-        <child link = "box_one_link" />
-        <origin xyz = "-${(arm_base_rail_length / 2) - (box_length / 2)} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
-     </joint>
+    <joint name = "base_rail_to_ mid_rail_joint" type = "prismatic">
+    <parent link = "arm_base_rail_link"/>
+    <child link="arm_mid_rail_link" />
+    <origin xyz = "0 0 ${arm_base_rail_height}" rpy = "0 0 0" />
+    <limit lower="0" upper="${((arm_base_rail_length / 2) + (arm_base_rail_length / 4))/2}" effort="100.0" velocity="0.5"/>
+    </joint>       
+    
+    <joint name = "box_one_joint" type = "fixed">
+    <parent link = "arm_base_car_link"/>
+    <child link = "box_one_link" />
+    <origin xyz = "-${(arm_base_rail_length / 2) - (box_length / 2)} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+    </joint>
 
-     <joint name = "box_two_joint" type = "fixed">
-        <parent link = "arm_base_car_link"/>
-        <child link = "box_two_link" />
-        <origin xyz = "-${(arm_base_rail_length / 2) - (box_length * 1.5) - 0.05} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
-     </joint>
-     
-     <joint name = "box_three_joint" type = "fixed">
-        <parent link = "arm_base_car_link"/>
-        <child link = "box_three_link" />
-        <origin xyz = "${(box_length / 2) - 0.05} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
-     </joint>     
+    <joint name = "box_two_joint" type = "fixed">
+    <parent link = "arm_base_car_link"/>
+    <child link = "box_two_link" />
+    <origin xyz = "-${(arm_base_rail_length / 2) - (box_length * 1.5) - 0.05} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+    </joint>
+    
+    <joint name = "box_three_joint" type = "fixed">
+    <parent link = "arm_base_car_link"/>
+    <child link = "box_three_link" />
+    <origin xyz = "${(box_length / 2) - 0.05} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+    </joint>     
 
-     <joint name = "box_four_joint" type = "fixed">
-        <parent link = "arm_base_car_link"/>
-        <child link = "box_four_link" />
-        <origin xyz = "${box_length *1.5} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
-     </joint>       
+    <joint name = "box_four_joint" type = "fixed">
+    <parent link = "arm_base_car_link"/>
+    <child link = "box_four_link" />
+    <origin xyz = "${box_length *1.5} 0 ${arm_base_rail_height}" rpy = "0 0 0"/>
+    </joint>       
    
     <!-- Robot Arm -->
     <joint name = "mid_rail_to_arm_car_joint" type = "prismatic">

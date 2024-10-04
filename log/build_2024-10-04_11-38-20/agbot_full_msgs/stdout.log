@@ -1,0 +1,13 @@
+[  3%] Built target agbot_full_msgs__cpp
+[  6%] [32mBuilding C object CMakeFiles/agbot_full_msgs__rosidl_generator_c.dir/rosidl_generator_c/agbot_full_msgs/action/detail/agbot_full_arm_task__functions.c.o[0m
+[  6%] Built target ament_cmake_python_copy_agbot_full_msgs
+[  9%] [32mBuilding CXX object CMakeFiles/agbot_full_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/agbot_full_msgs/action/detail/dds_fastrtps/agbot_full_arm_task__type_support.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/agbot_full_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/agbot_full_msgs/action/agbot_full_arm_task__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/agbot_full_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/agbot_full_msgs/action/detail/agbot_full_arm_task__type_support.cpp.o[0m
+running egg_info
+writing agbot_full_msgs.egg-info/PKG-INFO
+writing dependency_links to agbot_full_msgs.egg-info/dependency_links.txt
+writing top-level names to agbot_full_msgs.egg-info/top_level.txt
+reading manifest file 'agbot_full_msgs.egg-info/SOURCES.txt'
+writing manifest file 'agbot_full_msgs.egg-info/SOURCES.txt'
+[ 16%] Built target ament_cmake_python_build_agbot_full_msgs_egg

@@ -20,7 +20,6 @@ moveit_simple_controller_manager:
     action_ns: follow_joint_trajectory
     default: true
     joints:
-      - mid_rail_to_arm_car_joint
       - arm_base_joint
       - shoulder_joint
       - elbow_joint
@@ -30,5 +29,4 @@ moveit_simple_controller_manager:
     action_ns: follow_joint_trajectory
     default: true
     joints:
-      - wrist_joint
       - gripper_right_joint

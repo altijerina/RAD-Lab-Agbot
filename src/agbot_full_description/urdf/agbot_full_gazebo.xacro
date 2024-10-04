@@ -14,7 +14,7 @@
             <left_joint>base_left_wheel_joint</left_joint>
             <right_joint>base_right_wheel_joint</right_joint>
 
-            <wheel_separation>0.179</wheel_separation>
+            <wheel_separation>1.8288</wheel_separation>
             <wheel_diameter>0.066</wheel_diameter>
 
             <max_wheel_torque>200.0</max_wheel_torque>
@@ -85,7 +85,7 @@
         </sensor>
       </gazebo>       
 
-      <gazebo reference="laser_frame">
+      <gazebo reference="laser_link">
         <sensor name="laser" type="ray">
             <pose> 0 0 0 0 0 0 </pose>
             <visualize>true</visualize>
@@ -97,6 +97,12 @@
                         <min_angle>-3.14</min_angle>
                         <max_angle>3.14</max_angle>
                     </horizontal>
+
+                    <vertical>
+                        <samples>1</samples>
+                        <min_angle>0</min_angle>
+                        <max_angle>0</max_angle>
+                    </vertical>                      
                 </scan>
                 <range>
                     <min>0.3</min>
@@ -119,13 +125,13 @@
     </gazebo>     
     
     <gazebo reference="left_wheel_link">
-      <material>Gazebo/Black</material>
+      <material>Gazebo/Grey</material>
       <mu1 value="0.8"/>
       <mu2 value="0.8"/>        
     </gazebo>      
     
     <gazebo reference="right_wheel_link">
-      <material>Gazebo/Black</material>
+      <material>Gazebo/Grey</material>
       <mu1 value="0.8"/>
       <mu2 value="0.8"/>
     </gazebo>   
@@ -136,13 +142,17 @@
       <mu2 value="0.0001"/>
     </gazebo>    
     
-    <gazebo reference="rgb_camera">
+    <gazebo reference="rgb_camera_link">
       <material>Gazebo/DarkGrey</material>
     </gazebo>     
     
     <gazebo reference="mast_link">
       <material>Gazebo/Purple</material>   
-    </gazebo>       
+    </gazebo>    
+
+    <gazebo reference="laser_link">
+      <material>Gazebo/Grey</material>
+    </gazebo>   
     
     <!-- Robot Arm -->
     <gazebo reference = "roboball_cylinder_link">

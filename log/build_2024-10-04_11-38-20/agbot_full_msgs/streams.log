@@ -1,0 +1,47 @@
+[0.050s] Invoking command in '/home/albert/rad_ws/build/agbot_full_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/rad_ws/build/agbot_full_msgs -- -j8 -l8
+[0.102s] [  3%] Built target agbot_full_msgs__cpp
+[0.105s] [  6%] [32mBuilding C object CMakeFiles/agbot_full_msgs__rosidl_generator_c.dir/rosidl_generator_c/agbot_full_msgs/action/detail/agbot_full_arm_task__functions.c.o[0m
+[0.112s] [  6%] Built target ament_cmake_python_copy_agbot_full_msgs
+[0.137s] [  9%] [32mBuilding CXX object CMakeFiles/agbot_full_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/agbot_full_msgs/action/detail/dds_fastrtps/agbot_full_arm_task__type_support.cpp.o[0m
+[0.138s] In file included from [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_generator_c/agbot_full_msgs/action/detail/agbot_full_arm_task__functions.h:19[m[K,
+[0.138s]                  from [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_generator_c/agbot_full_msgs/action/detail/agbot_full_arm_task__functions.c:4[m[K:
+[0.138s] [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_generator_c/agbot_full_msgs/action/detail/agbot_full_arm_task__struct.h:79:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.h: No such file or directory
+[0.138s]    79 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.h"[m[K
+[0.138s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.138s] compilation terminated.
+[0.139s] gmake[2]: *** [CMakeFiles/agbot_full_msgs__rosidl_generator_c.dir/build.make:105: CMakeFiles/agbot_full_msgs__rosidl_generator_c.dir/rosidl_generator_c/agbot_full_msgs/action/detail/agbot_full_arm_task__functions.c.o] Error 1
+[0.139s] [ 12%] [32mBuilding CXX object CMakeFiles/agbot_full_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/agbot_full_msgs/action/agbot_full_arm_task__type_support.cpp.o[0m
+[0.140s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/agbot_full_msgs__rosidl_generator_c.dir/all] Error 2
+[0.140s] gmake[1]: *** Waiting for unfinished jobs....
+[0.141s] [ 16%] [32mBuilding CXX object CMakeFiles/agbot_full_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/agbot_full_msgs/action/detail/agbot_full_arm_task__type_support.cpp.o[0m
+[0.250s] In file included from [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_typesupport_cpp/agbot_full_msgs/action/agbot_full_arm_task__type_support.cpp:7[m[K:
+[0.250s] [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_generator_cpp/agbot_full_msgs/action/detail/agbot_full_arm_task__struct.hpp:362:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+[0.251s]   362 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+[0.251s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.251s] compilation terminated.
+[0.255s] gmake[2]: *** [CMakeFiles/agbot_full_msgs__rosidl_typesupport_cpp.dir/build.make:86: CMakeFiles/agbot_full_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/agbot_full_msgs/action/agbot_full_arm_task__type_support.cpp.o] Error 1
+[0.255s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/agbot_full_msgs__rosidl_typesupport_cpp.dir/all] Error 2
+[0.258s] In file included from [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_typesupport_fastrtps_cpp/agbot_full_msgs/action/detail/agbot_full_arm_task__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[0.258s]                  from [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_typesupport_fastrtps_cpp/agbot_full_msgs/action/detail/dds_fastrtps/agbot_full_arm_task__type_support.cpp:4[m[K:
+[0.258s] [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_generator_cpp/agbot_full_msgs/action/detail/agbot_full_arm_task__struct.hpp:362:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+[0.259s]   362 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+[0.259s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.259s] compilation terminated.
+[0.261s] In file included from [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_typesupport_introspection_cpp/agbot_full_msgs/action/detail/agbot_full_arm_task__type_support.cpp:12[m[K:
+[0.261s] [01m[K/home/albert/rad_ws/build/agbot_full_msgs/rosidl_generator_cpp/agbot_full_msgs/action/detail/agbot_full_arm_task__struct.hpp:362:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+[0.261s]   362 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+[0.261s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.261s] compilation terminated.
+[0.261s] gmake[2]: *** [CMakeFiles/agbot_full_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:91: CMakeFiles/agbot_full_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/agbot_full_msgs/action/detail/agbot_full_arm_task__type_support.cpp.o] Error 1
+[0.261s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/agbot_full_msgs__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[0.264s] gmake[2]: *** [CMakeFiles/agbot_full_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:91: CMakeFiles/agbot_full_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/agbot_full_msgs/action/detail/dds_fastrtps/agbot_full_arm_task__type_support.cpp.o] Error 1
+[0.265s] gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/agbot_full_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[0.676s] running egg_info
+[0.677s] writing agbot_full_msgs.egg-info/PKG-INFO
+[0.677s] writing dependency_links to agbot_full_msgs.egg-info/dependency_links.txt
+[0.677s] writing top-level names to agbot_full_msgs.egg-info/top_level.txt
+[0.679s] reading manifest file 'agbot_full_msgs.egg-info/SOURCES.txt'
+[0.680s] writing manifest file 'agbot_full_msgs.egg-info/SOURCES.txt'
+[0.703s] [ 16%] Built target ament_cmake_python_build_agbot_full_msgs_egg
+[0.703s] gmake: *** [Makefile:146: all] Error 2
+[0.705s] Invoked command in '/home/albert/rad_ws/build/agbot_full_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/albert/ws_moveit2/install/moveit_configs_utils:/home/albert/ws_moveit2/install/launch_param_builder:/home/albert/umov_ws/install/arduino_py_examples:/home/albert/udem2_ws/install/actions_py:/home/albert/udem2_ws/install/lifecycle_py:/home/albert/udem2_ws/install/executors_py:/home/albert/udem2_ws/install/components_py:/home/albert/udem_ws/install/turtlesim_catcher:/home/albert/udem_ws/install/my_py_pkg:/home/albert/udem_ws/install/lifecycle_py:/home/albert/bcdc_ws/install/agbot_teleop:/home/albert/bcdc_ws/install/agbot_py:/home/albert/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /home/albert/.local/bin/cmake --build /home/albert/rad_ws/build/agbot_full_msgs -- -j8 -l8

@@ -1,0 +1,15 @@
+/home/albert/rad_ws/install/agbot_full_msgs/share/ament_index/resource_index/package_run_dependencies/agbot_full_msgs
+/home/albert/rad_ws/install/agbot_full_msgs/share/ament_index/resource_index/parent_prefix_path/agbot_full_msgs
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/environment/ament_prefix_path.sh
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/environment/ament_prefix_path.dsv
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/environment/path.sh
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/environment/path.dsv
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/local_setup.bash
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/local_setup.sh
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/local_setup.zsh
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/local_setup.dsv
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/package.dsv
+/home/albert/rad_ws/install/agbot_full_msgs/share/ament_index/resource_index/packages/agbot_full_msgs
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/cmake/agbot_full_msgsConfig.cmake
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/cmake/agbot_full_msgsConfig-version.cmake
+/home/albert/rad_ws/install/agbot_full_msgs/share/agbot_full_msgs/package.xml

@@ -3,7 +3,7 @@ controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
 
-    prismatic_joint_position_controller:
+    rail_system_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
 
@@ -18,7 +18,7 @@ controller_manager:
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-prismatic_joint_position_controller:
+rail_system_controller:
   ros__parameters:
     joints:
       - base_rail_to_ mid_rail_joint
@@ -28,11 +28,9 @@ prismatic_joint_position_controller:
     state_interfaces:
       - position
       - velocity
-      - effort
 arm_controller:
   ros__parameters:
     joints:
-      - mid_rail_to_arm_car_joint
       - arm_base_joint
       - shoulder_joint
       - elbow_joint
@@ -45,7 +43,6 @@ arm_controller:
 gripper_controller:
   ros__parameters:
     joints:
-      - wrist_joint
       - gripper_right_joint
     command_interfaces:
       - position

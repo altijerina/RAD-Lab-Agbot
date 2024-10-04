@@ -43,7 +43,7 @@ def generate_launch_description():
     prismatic_joint_position_controller = Node(        
         package="controller_manager",
         executable="spawner",
-        arguments=["prismatic_joint_position_controller", 
+        arguments=["prismatic_controller", 
                    "--controller-manager", 
                    "/controller_manager"],
     )           

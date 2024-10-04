@@ -1,0 +1,6 @@
+{
+  "package_name": "agbot_full_msgs",
+  "non_idl_tuples": [
+    "/home/albert/rad_ws/src/agbot_full_msgs:Action/AgbotFullArmTask.action"
+  ]
+}

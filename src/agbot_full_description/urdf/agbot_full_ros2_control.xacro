@@ -30,6 +30,8 @@
                 <param name="max">${((arm_base_rail_length / 2) + (arm_base_rail_length / 4))/2}</param>
             </command_interface>
             <state_interface name="position"/>
+            <!-- <state_interface name="velocity"/>
+            <state_interface name="effort"/> -->
         </joint> 
 
         <joint name="mid_rail_to_arm_car_joint">
@@ -38,7 +40,9 @@
                 <param name="max">$${(arm_base_rail_length / 2) + (arm_base_rail_length / 4)}</param>
             </command_interface>
             <state_interface name="position"/>
-        </joint>          
+            <!-- <state_interface name="velocity"/>
+            <state_interface name="effort"/> -->
+        </joint>           
 
         <joint name="arm_base_joint">
             <command_interface name="position">

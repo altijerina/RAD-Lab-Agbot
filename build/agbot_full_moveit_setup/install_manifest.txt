@@ -26,6 +26,7 @@
 /home/albert/rad_ws/install/agbot_full_moveit_setup/share/agbot_full_moveit_setup/config/ros2_controllers.yaml
 /home/albert/rad_ws/install/agbot_full_moveit_setup/share/agbot_full_moveit_setup/config/agbot_full.srdf
 /home/albert/rad_ws/install/agbot_full_moveit_setup/share/agbot_full_moveit_setup/config/agbot_full.urdf.xacro
+/home/albert/rad_ws/install/agbot_full_moveit_setup/share/agbot_full_moveit_setup/config/sensors_3d.yaml
 /home/albert/rad_ws/install/agbot_full_moveit_setup/share/agbot_full_moveit_setup/config/moveit_controllers.yaml
 /home/albert/rad_ws/install/agbot_full_moveit_setup/share/agbot_full_moveit_setup/config/initial_positions.yaml
 /home/albert/rad_ws/install/agbot_full_moveit_setup/share/agbot_full_moveit_setup/config/pilz_cartesian_limits.yaml

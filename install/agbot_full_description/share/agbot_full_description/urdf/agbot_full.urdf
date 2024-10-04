@@ -14,7 +14,7 @@
       <update_rate>100</update_rate>
       <left_joint>base_left_wheel_joint</left_joint>
       <right_joint>base_right_wheel_joint</right_joint>
-      <wheel_separation>0.179</wheel_separation>
+      <wheel_separation>1.8288</wheel_separation>
       <wheel_diameter>0.066</wheel_diameter>
       <max_wheel_torque>200.0</max_wheel_torque>
       <max_wheel_acceleration>10.0</max_wheel_acceleration>
@@ -78,7 +78,7 @@
       </plugin>
     </sensor>
   </gazebo>
-  <gazebo reference="laser_frame">
+  <gazebo reference="laser_link">
     <sensor name="laser" type="ray">
       <pose> 0 0 0 0 0 0 </pose>
       <visualize>true</visualize>
@@ -90,6 +90,11 @@
             <min_angle>-3.14</min_angle>
             <max_angle>3.14</max_angle>
           </horizontal>
+          <vertical>
+            <samples>1</samples>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+          </vertical>
         </scan>
         <range>
           <min>0.3</min>
@@ -110,12 +115,12 @@
     <material>Gazebo/White</material>
   </gazebo>
   <gazebo reference="left_wheel_link">
-    <material>Gazebo/Black</material>
+    <material>Gazebo/Grey</material>
     <mu1 value="0.8"/>
     <mu2 value="0.8"/>
   </gazebo>
   <gazebo reference="right_wheel_link">
-    <material>Gazebo/Black</material>
+    <material>Gazebo/Grey</material>
     <mu1 value="0.8"/>
     <mu2 value="0.8"/>
   </gazebo>
@@ -124,15 +129,20 @@
     <mu1 value="0.0001"/>
     <mu2 value="0.0001"/>
   </gazebo>
-  <gazebo reference="rgb_camera">
+  <gazebo reference="rgb_camera_link">
     <material>Gazebo/DarkGrey</material>
   </gazebo>
   <gazebo reference="mast_link">
     <material>Gazebo/Purple</material>
   </gazebo>
+  <gazebo reference="laser_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
   <!-- Robot Arm -->
-  <gazebo reference="roboball_cylinder">
+  <gazebo reference="roboball_cylinder_link">
     <material>Gazebo/GreyTransparent</material>
+    <mu1>30.0</mu1>
+    <mu2>30.0</mu2>
   </gazebo>
   <gazebo reference="arm_base_rail_link">
     <material>Gazebo/White</material>
@@ -158,28 +168,28 @@
   <gazebo reference="arm_base_link">
     <material>Gazebo/Blue</material>
   </gazebo>
-  <gazebo reference="base_plate">
+  <gazebo reference="base_plate_link">
     <material>Gazebo/Red</material>
   </gazebo>
-  <gazebo reference="forward_drive_arm">
+  <gazebo reference="forward_drive_arm_link">
     <material>Gazebo/Yellow</material>
   </gazebo>
-  <gazebo reference="elbow">
+  <gazebo reference="elbow_link">
     <material>Gazebo/White</material>
   </gazebo>
-  <gazebo reference="horizontal_arm">
+  <gazebo reference="horizontal_arm_link">
     <material>Gazebo/Green</material>
   </gazebo>
-  <gazebo reference="claw_support">
+  <gazebo reference="claw_support_link">
     <material>Gazebo/Yellow</material>
   </gazebo>
-  <gazebo reference="gripper_right">
+  <gazebo reference="gripper_right_link">
     <material>Gazebo/Purple</material>
   </gazebo>
-  <gazebo reference="gripper_left">
+  <gazebo reference="gripper_left_link">
     <material>Gazebo/Purple</material>
   </gazebo>
-  <gazebo reference="arm_rgb_camera">
+  <gazebo reference="arm_rgb_camera_link">
     <material>Gazebo/Blue</material>
   </gazebo>
   <ros2_control name="RobotSystem" type="system">
@@ -200,21 +210,21 @@
     <!-- ARM -->
     <joint name="base_rail_to_ mid_rail_joint">
       <command_interface name="position">
-        <param name="min">0</param>
+        <param name="min">-0.1</param>
         <param name="max">0.5715</param>
       </command_interface>
       <state_interface name="position"/>
-      <state_interface name="velocity"/>
-      <state_interface name="effort"/>
+      <!-- <state_interface name="velocity"/>
+            <state_interface name="effort"/> -->
     </joint>
     <joint name="mid_rail_to_arm_car_joint">
       <command_interface name="position">
-        <param name="min">0</param>
+        <param name="min">-0.1</param>
         <param name="max">${(arm_base_rail_length / 2) + (arm_base_rail_length / 4)}</param>
       </command_interface>
       <state_interface name="position"/>
-      <state_interface name="velocity"/>
-      <state_interface name="effort"/>
+      <!-- <state_interface name="velocity"/>
+            <state_interface name="effort"/> -->
     </joint>
     <joint name="arm_base_joint">
       <command_interface name="position">
@@ -246,16 +256,19 @@
     </joint>
     <joint name="gripper_right_joint">
       <command_interface name="position">
-        <param name="min">-1.570796326795</param>
-        <param name="max">0</param>
+        <!-- <command_interface name="effort"> -->
+        <param name="min">-1.580796326795</param>
+        <param name="max">0.01</param>
       </command_interface>
       <state_interface name="position"/>
+      <!-- <state_interface name="effort"/> -->
     </joint>
     <joint name="gripper_left_joint">
       <param name="mimic">gripper_right_joint</param>
       <param name="multiplier">-1</param>
       <command_interface name="position">
-        <param name="min">0</param>
+        <!-- <command_interface name="effort"> -->
+        <param name="min">-0.01</param>
         <param name="max">1.570796326795</param>
       </command_interface>
     </joint>
@@ -354,8 +367,8 @@
     </collision>
     <inertial>
       <origin rpy="1.5707963267948966 -1.5707963267948966 0" xyz="0 0 0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.006769333333333333" ixy="0" ixz="0" iyy="0.006769333333333333" iyz="0" izz="0.013122"/>
+      <mass value="3.0"/>
+      <inertia ixx="0.020308" ixy="0" ixz="0" iyy="0.020308" iyz="0" izz="0.039366"/>
     </inertial>
   </link>
   <link name="right_wheel_link">
@@ -374,8 +387,8 @@
     </collision>
     <inertial>
       <origin rpy="1.5707963267948966 -1.5707963267948966 0" xyz="0 0 0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.006769333333333333" ixy="0" ixz="0" iyy="0.006769333333333333" iyz="0" izz="0.013122"/>
+      <mass value="3.0"/>
+      <inertia ixx="0.020308" ixy="0" ixz="0" iyy="0.020308" iyz="0" izz="0.039366"/>
     </inertial>
   </link>
   <link name="caster_wheel_link">
@@ -394,13 +407,13 @@
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.6096 0 0"/>
-      <mass value="0.2"/>
-      <inertia ixx="0.00209952" ixy="0" ixz="0" iyy="0.00209952" iyz="0" izz="0.00209952"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.020995200000000002" ixy="0" ixz="0" iyy="0.020995200000000002" iyz="0" izz="0.020995200000000002"/>
     </inertial>
   </link>
-  <link name="rgb_camera_optical">
+  <link name="rgb_camera_optical_link">
     </link>
-  <link name="rgb_camera">
+  <link name="rgb_camera_link">
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.001"/>
@@ -422,26 +435,46 @@
   </link>
   <link name="mast_link">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.015"/>
+      <origin rpy="0 0 0" xyz="0 0 0.075"/>
       <geometry>
-        <box size="0.05 0.05 0.03"/>
+        <box size="0.05 0.05 0.15"/>
       </geometry>
       <material name="pink"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.05 0.05 0.03"/>
+        <box size="0.05 0.05 0.15"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.005"/>
-      <inertia ixx="1.416666666666667e-06" ixy="0" ixz="0" iyy="2.083333333333334e-06" iyz="0" izz="1.416666666666667e-06"/>
+      <inertia ixx="1.0416666666666668e-05" ixy="0" ixz="0" iyy="2.083333333333334e-06" iyz="0" izz="1.0416666666666668e-05"/>
     </inertial>
   </link>
-  <link name="laser_frame">       
+  <link name="laser_frame_link">       
     </link>
+  <link name="laser_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.025"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.1" radius="0.025"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="9.895833333333334e-05" ixy="0" ixz="0" iyy="9.895833333333334e-05" iyz="0" izz="3.125000000000001e-05"/>
+    </inertial>
+  </link>
   <!-- Robot Arm -->
   <link name="roboball_cylinder_link">
     <visual>
@@ -831,22 +864,27 @@
   </joint>
   <joint name="camera_optical_joint" type="fixed">
     <parent link="base_link"/>
-    <child link="rgb_camera_optical"/>
+    <child link="rgb_camera_optical_link"/>
     <origin rpy="0 0 0" xyz="0.9144 0 0.6858"/>
   </joint>
   <joint name="rgb_camera_joint" type="fixed">
-    <parent link="rgb_camera_optical"/>
-    <child link="rgb_camera"/>
+    <parent link="rgb_camera_optical_link"/>
+    <child link="rgb_camera_link"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <joint name="base_mast_joint" type="fixed">
     <parent link="base_link"/>
     <child link="mast_link"/>
-    <origin rpy="0 0 0" xyz="0.9394 0 0.5715"/>
+    <origin rpy="0 0 0" xyz="0.8644 0 0.762"/>
+  </joint>
+  <joint name="laser_frame_joint" type="fixed">
+    <parent link="mast_link"/>
+    <child link="laser_frame_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.15"/>
   </joint>
   <joint name="laser_joint" type="fixed">
-    <parent link="mast_link"/>
-    <child link="laser_frame"/>
+    <parent link="laser_frame_link"/>
+    <child link="laser_link"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <!-- Transition Joint  -->
@@ -978,25 +1016,31 @@
     </joint>
   </transmission>
   <transmission name="mid_rail_joint_prismatic_transmission">
-    <type>transmission_interface/SimpleTransmission</type>
+    <!-- <type>transmission_interface/SimpleTransmission</type> -->
+    <type>&quot;velocity_controllers/JointPositionController&quot;</type>
     <!-- <plugin>hardware_interface/VelocityJointInterface</plugin> -->
     <joint name="mid_rail_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <!-- <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> -->
     </joint>
     <actuator name="mid_rail_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <!-- <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> -->
+      <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="arm_base_to_arm_car_joint_prismatic_transmission">
-    <type>transmission_interface/SimpleTransmission</type>
+    <!-- <type>transmission_interface/SimpleTransmission</type> -->
+    <type>&quot;velocity_controllers/JointPositionController&quot;</type>
     <!-- <plugin>hardware_interface/VelocityJointInterface</plugin> -->
     <joint name="arm_base_to_arm_car_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <!-- <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> -->
     </joint>
     <actuator name="arm_base_to_arm_car_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <!-- <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> -->
+      <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="transmission_arm_base_joint">

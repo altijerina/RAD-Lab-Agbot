@@ -67,6 +67,34 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        arm_base_car_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true  
+        arm_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true                  
+        arm_base_rail_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true  
+        arm_mid_rail_link:
+          Show Axes: false
+          Show Trail: false
+          Value: true  
+        arm_rgb_camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_rgb_camera_optical_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false                  
         base_footprint:
           Alpha: 1
           Show Axes: false
@@ -76,21 +104,89 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        base_plate:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true   
+        box_one_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true     
+        box_four_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true  
+        box_three_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true  
+        box_two_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true                  
         caster_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        claw_support:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true   
+        forward_drive_arm:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        horizontal_arm:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true                 
         left_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        mast_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true        
         right_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        rgb_camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rgb_camera_optical_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false            
+        roboball_cylinder:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false           
       Mass Properties:
         Inertia: false
         Mass: false
@@ -104,15 +200,55 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        arm_base_car_link:
+          Value: true
+        arm_base_link:
+          Value: true
+        arm_base_rail_link:
+          Value: true
+        arm_mid_rail_link:
+          Value: true  
+        arm_rgb_camera_link:
+          Value: true
+        arm_rgb_camera_optical_link:
+          Value: true                
         base_footprint:
           Value: true
         base_link:
           Value: true
+        base_plate_link:
+          Value: true
+        box_one_link:
+          Value: true
+        box_four_link:
+          Value: true
+        box_three_link:
+          Value: true
+        box_two_link: 
+          Value: true           
         caster_wheel_link:
           Value: true
+        claw_support_link:
+          Value: true  
+        forward_drive_arm_link:
+          Value: true
+        gripper_left_link:
+          Value: true
+        gripper_right_link:
+          Value: true
+        horizontal_arm_link:
+          Value: true                  
         left_wheel_link:
           Value: true
+        mast_link:
+          Value: true
         right_wheel_link:
+          Value: true
+        rgb_camera_optical_link:
+          Value: true
+        rgb_camera_link:
+          Value: true
+        roboball_cylinder_link:
           Value: true
       Marker Scale: 0.5
       Name: TF
@@ -128,6 +264,30 @@ Visualization Manager:
               {}
             right_wheel_link:
               {}
+            mast_link:           
+              rgb_camera_optical_link:
+                rgb_camera_link:
+                  {}               
+            roboball_cylinder_link:
+              arm_base_rail_link:
+                arm_mid_rail_link:
+                  arm_base_car_link:
+                    box_one_link:
+                    box_two_link:
+                    box_three_link:
+                    box_four_link:
+                    arm_base_link:
+                      base_plate:
+                        forward_drive_arm_link:
+                          horizontal_arm_link:
+                            claw_support_link:
+                              gripper_left_link:
+                                {}
+                              gripper_right_link:
+                                {}
+                              rgb_camera_optical_link:
+                                rgb_camera_link:
+                                  {}              
       Update Interval: 0
       Value: true
   Enabled: true

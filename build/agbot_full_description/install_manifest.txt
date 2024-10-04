@@ -28,7 +28,7 @@
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/ground_plane/model.config
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/ground_plane/model.sdf
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/ground_plane/model-1_4.sdf
-/home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/basic_agbot_description/agbot.sdf
+/home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/basic_agbot_description/agbot_full.sdf
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/basic_agbot_description/agbot_model.config
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/sun/model-1_2.sdf
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//models/sun/model-1_3.sdf
@@ -38,7 +38,6 @@
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//rviz/agbot_full_config.rviz
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full_common_properties.xacro
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full.xacro
-/home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full.sdf
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full.urdf
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full_gazebo.xacro
 /home/albert/rad_ws/install/agbot_full_description/share/agbot_full_description//urdf/agbot_full_ros2_control.xacro
